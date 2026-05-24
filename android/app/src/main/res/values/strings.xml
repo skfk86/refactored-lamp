@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">سيرة</string>
+    <string name="title_activity_main">سيرة</string>
+    <string name="package_name">sd.sira.app</string>
+    <string name="custom_url_scheme">sd.sira.app</string>
+</resources>
