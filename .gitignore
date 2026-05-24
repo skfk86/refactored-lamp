@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Capacitor
+# Uncomment the next two lines if you want to commit android/ and ios/ folders
+# android/
+# ios/
+
+# Build outputs
+android/app/build/
+android/.gradle/
+android/captures/
+android/local.properties
+*.apk
+*.aab
+*.ipa
+
+# Keys & Secrets (NEVER commit these!)
+*.keystore
+*.jks
+keystore.properties
+google-services.json
+GoogleService-Info.plist
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temp
+.tmp/
+.cache/
+dist/
