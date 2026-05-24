@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+<meta name="theme-color" content="#002045"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<title>سيرة</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;background:#f7f9fb}
+body{font-family:'Tajawal',sans-serif;color:#191c1e}
+:root{--p:#002045;--pc:#1a365d;--op:#fff;--s:#775a19;--sc:#fed488;--osc:#785a1a;--sur:#f7f9fb;--sc2:#eceef0;--scl:#f2f4f6;--sch:#e6e8ea;--on:#191c1e;--onv:#43474e;--ov:#c4c6cf;--err:#ba1a1a;--errc:#ffdad6;--pf:#d6e3ff}
+.screen{display:none;width:100%;height:100dvh;flex-direction:column;overflow:hidden}
+.screen.active{display:flex}
+.sb{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+@keyframes sIn{from{opacity:.2;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
+.ani{animation:sIn .22s ease-out}
+.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;user-select:none;pointer-events:none;display:inline-block;line-height:1}
+.fi{font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24}
+.pat{background-image:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='%231a365d' fill-opacity='.025'/%3E%3C/svg%3E")}
+.topbar{height:60px;min-height:60px;flex-shrink:0;background:rgba(247,249,251,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--ov);display:flex;flex-direction:row-reverse;align-items:center;justify-content:space-between;padding:0 18px}
+.brand{font-family:'Cairo',sans-serif;font-size:20px;font-weight:700;color:var(--p)}
+.botnav{min-height:54px;flex-shrink:0;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid var(--ov);display:flex;flex-direction:row-reverse;justify-content:space-around;align-items:center;padding:4px 4px max(6px,env(safe-area-inset-bottom))}
+.ni{display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 12px;border-radius:18px;cursor:pointer;color:var(--onv);font-size:10px;font-family:'Tajawal',sans-serif;transition:background .15s,color .15s;min-width:50px}
+.ni .material-symbols-outlined{font-size:22px}
+.ni.on{background:var(--sc);color:var(--osc)}
+.ffoot{flex-shrink:0;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid var(--ov);padding:10px 18px max(14px,env(safe-area-inset-bottom))}
+.btnp{background:var(--p);color:var(--op);border:none;border-bottom:2px solid var(--s);padding:12px 16px;border-radius:12px;font-family:'Cairo',sans-serif;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;width:100%;transition:transform .1s}
+.btnp:active{transform:scale(.97)}
+.btno{background:transparent;color:var(--s);border:2px solid var(--s);padding:12px 16px;border-radius:12px;font-family:'Cairo',sans-serif;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;width:100%;transition:transform .1s}
+.btno:active{transform:scale(.97)}
+.ibtn{width:38px;height:38px;border-radius:50%;background:transparent;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--onv);transition:background .14s}
+.ibtn:hover{background:var(--sch)}
+.ibtn:active{transform:scale(.91)}
+.fld{width:100%;padding:13px 15px;background:white;border:1.5px solid var(--ov);border-radius:12px;font-family:'Tajawal',sans-serif;font-size:16px;outline:none;transition:border-color .15s;text-align:right;color:var(--on);-webkit-appearance:none}
+.fld:focus{border-color:var(--s)}
+.fld.ltr{text-align:left;direction:ltr}
+textarea.fld{resize:none}
+.flbl{display:block;text-align:right;font-size:13px;font-weight:600;color:var(--onv);margin-bottom:5px;font-family:'Cairo',sans-serif}
+.card{background:white;border:1px solid var(--ov);border-radius:14px;padding:14px;transition:border-color .2s}
+.card:hover{border-color:var(--s)}
+.adash{width:100%;padding:18px 14px;border:2px dashed var(--ov);border-radius:14px;display:flex;flex-direction:column;align-items:center;gap:7px;color:var(--onv);cursor:pointer;background:transparent;font-family:'Cairo',sans-serif;font-size:14px;font-weight:600;transition:all .2s}
+.adash:hover{border-color:var(--s);color:var(--s);background:rgba(254,212,136,.07)}
+.adash:active{transform:scale(.98)}
+.tip{background:rgba(254,212,136,.12);border-right:4px solid var(--s);border-radius:0 12px 12px 0;padding:12px 14px;display:flex;gap:10px;align-items:flex-start}
+.prog{width:100%;height:7px;background:var(--sch);border-radius:4px;overflow:hidden}
+.progf{height:100%;background:var(--p);border-radius:4px;transition:width .4s ease}
+.badge{display:inline-flex;align-items:center;gap:5px;background:rgba(0,32,69,.07);border:1px solid rgba(0,32,69,.13);color:var(--p);border-radius:20px;padding:3px 9px;font-size:11px;font-weight:700;font-family:'Tajawal',sans-serif}
+.av{width:38px;height:38px;border-radius:50%;background:var(--sc);display:flex;align-items:center;justify-content:center;color:var(--p);font-family:'Cairo',sans-serif;font-weight:700;font-size:15px;border:2px solid var(--p);flex-shrink:0}
+.chip{display:inline-flex;align-items:center;gap:5px;background:var(--pf);color:var(--on);padding:5px 11px;border-radius:8px;font-size:13px;border:1px solid rgba(0,32,69,.1)}
+.chip button{background:none;border:none;cursor:pointer;color:var(--onv);padding:0;font-family:'Material Symbols Outlined';font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;font-size:15px;line-height:1;display:flex;align-items:center}
+.modal{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.42);backdrop-filter:blur(3px);align-items:flex-end}
+.modal.open{display:flex}
+.msh{background:white;border-radius:20px 20px 0 0;width:100%;padding:0 18px;max-height:88dvh;overflow-y:auto;padding-bottom:max(22px,env(safe-area-inset-bottom));animation:shUp .28s cubic-bezier(.34,1.4,.64,1)}
+@keyframes shUp{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.mhdl{width:38px;height:4px;background:var(--ov);border-radius:2px;margin:10px auto 16px}
+.mtit{font-family:'Cairo',sans-serif;font-size:17px;font-weight:700;color:var(--p);text-align:right;margin-bottom:14px}
+#toast{position:fixed;bottom:76px;left:50%;transform:translateX(-50%) translateY(10px);background:#191c1e;color:white;padding:8px 16px;border-radius:22px;font-size:14px;z-index:999;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;white-space:nowrap;font-family:'Tajawal',sans-serif}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.cvc{background:white;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(0,32,69,.07);border:1px solid var(--ov);transition:transform .13s}
+.cvc:active{transform:scale(.985)}
+.mrow{display:flex;align-items:center;gap:12px;padding:13px 14px;background:none;border:none;border-radius:10px;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:15px;color:var(--on);text-align:right;width:100%;transition:background .13s}
+.mrow:hover{background:var(--scl)}
+.mrow.red{color:var(--err)}
+.mrow.red:hover{background:var(--errc)}
+@media print{body>*:not(#cvprint){display:none!important}#cvprint{display:block!important;position:fixed;inset:0;background:white;z-index:9999;overflow:auto}}
+#cvprint{display:none}
+.sbh::-webkit-scrollbar{display:none}.sbh{-ms-overflow-style:none;scrollbar-width:none}
+.tpl-card{background:white;border-radius:13px;overflow:hidden;border:1.5px solid var(--ov);cursor:pointer;transition:border-color .15s,transform .12s;position:relative}
+.tpl-card:active{transform:scale(.97)}
+.fchip{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-family:'Tajawal',sans-serif;cursor:pointer;border:1.5px solid var(--ov);background:white;color:var(--onv);transition:all .15s;white-space:nowrap}
+.fchip.on{background:var(--p);color:white;border-color:var(--p)}
+.ad-circle{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cairo',sans-serif;font-size:22px;font-weight:700;color:var(--p);border:4px solid var(--sc);position:relative;flex-shrink:0}
+.ad-circle svg{position:absolute;top:-4px;left:-4px;width:80px;height:80px;transform:rotate(-90deg)}
+.doc-card{background:white;border-radius:14px;border:1px solid var(--ov);display:flex;overflow:hidden;margin-bottom:10px;cursor:pointer;transition:box-shadow .15s,transform .13s}
+.doc-card:active{transform:scale(.985)}
+.doc-card:hover{box-shadow:0 4px 16px rgba(0,32,69,.08)}
+.fab{position:fixed;bottom:max(72px,calc(54px + env(safe-area-inset-bottom)));left:20px;width:52px;height:52px;border-radius:50%;background:var(--p);color:white;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,32,69,.3);transition:transform .13s;z-index:30}
+.fab:active{transform:scale(.92)}
+/* Toggle Switch */
+.tgl{position:relative;display:inline-block;width:46px;height:26px;flex-shrink:0}
+.tgl input{opacity:0;width:0;height:0}
+.tgl .sl{position:absolute;cursor:pointer;inset:0;background:#ccc;border-radius:26px;transition:.3s}
+.tgl .sl::before{position:absolute;content:"";height:20px;width:20px;left:3px;bottom:3px;background:white;border-radius:50%;transition:.3s;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.tgl input:checked + .sl{background:var(--p)}
+.tgl input:checked + .sl::before{transform:translateX(20px)}
+.tgl input:disabled + .sl{opacity:.5;cursor:not-allowed}
+/* Notification row */
+.notif-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--scl)}
+.notif-row:last-child{border-bottom:none;padding-bottom:0}
+</style>
+</head>
+<body>
+
+<!-- LANDING -->
+<div id="s-landing" class="screen active">
+<div class="sb pat" style="background:var(--sur)">
+  <div style="height:4px;background:var(--s)"></div>
+  <div style="padding:26px 18px 40px">
+    <div style="display:flex;flex-direction:row-reverse;align-items:center;justify-content:space-between;margin-bottom:24px">
+      <span class="brand">سيرة</span>
+      <div class="badge"><span class="material-symbols-outlined fi" style="font-size:13px">cloud_off</span>يعمل بدون إنترنت</div>
+    </div>
+    <span style="display:inline-block;padding:3px 11px;background:var(--sc);color:var(--osc);border-radius:20px;font-size:11px;font-weight:700;margin-bottom:10px">منصة التميز المهني</span>
+    <h1 style="font-family:'Cairo',sans-serif;font-size:24px;font-weight:800;color:var(--p);line-height:1.25;margin-bottom:10px">سيرة: ملفاتك في أمان على جهازك</h1>
+    <p style="color:var(--onv);font-size:14px;line-height:1.75;margin-bottom:22px">نصمم مستقبلك بهوية تعبر عنك. 30 قالب احترافي، خصوصية مطلقة، بياناتك لا تغادر جهازك.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:24px">
+      <div style="background:white;border-radius:14px;padding:14px;border:1px solid var(--ov)"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:26px;display:block;margin-bottom:5px">style</span><div style="font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;color:var(--p)">30 قالب</div><div style="font-size:11px;color:var(--onv);margin-top:1px">5 مجانية</div></div>
+      <div style="background:white;border-radius:14px;padding:14px;border:1px solid var(--ov)"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:26px;display:block;margin-bottom:5px">security</span><div style="font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;color:var(--p)">خصوصية تامة</div><div style="font-size:11px;color:var(--onv);margin-top:1px">بدون إنترنت</div></div>
+      <div style="background:white;border-radius:14px;padding:14px;border:1px solid var(--ov)"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:26px;display:block;margin-bottom:5px">picture_as_pdf</span><div style="font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;color:var(--p)">تصدير PDF</div><div style="font-size:11px;color:var(--onv);margin-top:1px">جاهز للطباعة</div></div>
+      <div style="background:white;border-radius:14px;padding:14px;border:1px solid var(--ov)"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:26px;display:block;margin-bottom:5px">workspace_premium</span><div style="font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;color:var(--p)">شهادات قريباً</div><div style="font-size:11px;color:var(--onv);margin-top:1px">قيد التطوير</div></div>
+    </div>
+    <div style="margin-bottom:10px"><label class="flbl">ما اسمك الأول؟</label><input id="l-name" class="fld" type="text" placeholder="أدخل اسمك" onkeydown="if(event.key==='Enter')startApp()"/></div>
+    <button class="btnp" onclick="startApp()" style="margin-bottom:10px"><span>ابدأ الآن</span><span class="material-symbols-outlined">arrow_back</span></button>
+    <p style="text-align:center;font-size:11px;color:var(--onv)"><span class="material-symbols-outlined fi" style="font-size:12px;vertical-align:middle;color:var(--s)">lock</span> جميع بياناتك تُخزّن على هاتفك فقط</p>
+  </div>
+</div>
+</div>
+
+<!-- HOME -->
+<div id="s-home" class="screen">
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:9px"><div class="av" id="hav">م</div><span class="brand">سيرة</span></div>
+  <div class="badge"><span class="material-symbols-outlined fi" style="font-size:13px">cloud_off</span>يعمل محلياً</div>
+</header>
+<div class="sb pat" style="padding:16px 18px 0">
+  <div style="margin-bottom:18px"><h1 id="hgreet" style="font-family:'Cairo',sans-serif;font-size:20px;font-weight:700;color:var(--p);margin-bottom:3px">أهلاً بك!</h1><p style="color:var(--onv);font-size:13px">بياناتك محفوظة محلياً بخصوصية تامة.</p></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px">
+    <button onclick="newCV()" style="position:relative;overflow:hidden;background:var(--pc);border:none;border-radius:18px;padding:18px;text-align:right;display:flex;flex-direction:column;justify-content:space-between;min-height:128px;cursor:pointer;transition:transform .12s" onmousedown="this.style.transform='scale(.97)'" onmouseup="this.style.transform=''" ontouchstart="this.style.transform='scale(.97)'" ontouchend="this.style.transform=''">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;width:100%"><span class="material-symbols-outlined fi" style="font-size:32px;color:rgba(255,255,255,.9)">add_circle</span><span style="background:var(--s);color:white;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:700">جديد</span></div>
+      <div><div style="font-family:'Cairo',sans-serif;font-size:17px;font-weight:700;color:white">إنشاء سيرة جديدة</div><div style="font-size:12px;color:rgba(255,255,255,.7)">من 30 قالب احترافي</div></div>
+    </button>
+    <button onclick="G('s-docs')" style="background:white;border:1px solid var(--ov);border-radius:18px;padding:16px;text-align:right;display:flex;align-items:center;gap:14px;cursor:pointer;transition:transform .12s" onmousedown="this.style.transform='scale(.97)'" onmouseup="this.style.transform=''" ontouchstart="this.style.transform='scale(.97)'" ontouchend="this.style.transform=''">
+      <span class="material-symbols-outlined fi" style="font-size:30px;color:var(--s);flex-shrink:0">folder_open</span>
+      <div style="text-align:right;flex:1"><div style="font-family:'Cairo',sans-serif;font-size:15px;font-weight:600;color:var(--p)">مستنداتي</div><div id="h-doc-cnt" style="font-size:12px;color:var(--onv)">اضغط لعرض سيَرك</div></div>
+      <span class="material-symbols-outlined" style="color:var(--onv);pointer-events:none">arrow_back_ios</span>
+    </button>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <button onclick="G('s-cert')" style="background:white;border:1.5px solid var(--ov);border-radius:16px;padding:14px 12px;text-align:right;display:flex;flex-direction:column;gap:6px;cursor:pointer;transition:transform .12s" onmousedown="this.style.transform='scale(.97)'" onmouseup="this.style.transform=''" ontouchstart="this.style.transform='scale(.97)'" ontouchend="this.style.transform=''">
+        <span class="material-symbols-outlined fi" style="font-size:28px;color:#7c3aed">workspace_premium</span>
+        <div><div style="font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;color:var(--p)">الشهادات</div><div style="font-size:11px;color:var(--onv)">إنشاء شهادة</div></div>
+      </button>
+      <button onclick="newCV()" style="background:white;border:1.5px solid var(--ov);border-radius:16px;padding:14px 12px;text-align:right;display:flex;flex-direction:column;gap:6px;cursor:pointer;transition:transform .12s" onmousedown="this.style.transform='scale(.97)'" onmouseup="this.style.transform=''" ontouchstart="this.style.transform='scale(.97)'" ontouchend="this.style.transform=''">
+        <span class="material-symbols-outlined fi" style="font-size:28px;color:var(--s)">description</span>
+        <div><div style="font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;color:var(--p)">سيرة ذاتية</div><div style="font-size:11px;color:var(--onv)">إنشاء سيرة</div></div>
+      </button>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:11px"><h2 style="font-family:'Cairo',sans-serif;font-size:16px;font-weight:700;color:var(--p)">آخر السيَر</h2><button onclick="G('s-docs')" style="background:none;border:none;color:var(--s);font-size:13px;font-weight:700;cursor:pointer;font-family:'Tajawal',sans-serif">عرض الكل</button></div>
+  <div id="hlist"></div>
+  <div style="background:white;border:1px solid var(--ov);border-radius:18px;padding:17px;margin-bottom:18px;position:relative;overflow:hidden">
+    <span class="material-symbols-outlined fi" style="position:absolute;bottom:-10px;left:-10px;font-size:68px;color:var(--p);opacity:.04">security</span>
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:8px"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:21px">security</span><span style="font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;color:var(--p)">خصوصيتك أولاً</span></div>
+    <p style="font-size:13px;color:var(--onv);line-height:1.65;margin-bottom:10px">جميع بياناتك مخزنة محلياً على هاتفك فقط.</p>
+    <div style="display:flex;gap:7px"><span style="background:rgba(0,32,69,.07);color:var(--p);padding:3px 10px;border-radius:16px;font-size:11px;font-weight:700;border:1px solid rgba(0,32,69,.09)">تشفير محلي</span><span style="background:rgba(119,90,25,.07);color:var(--s);padding:3px 10px;border-radius:16px;font-size:11px;font-weight:700;border:1px solid rgba(119,90,25,.09)">بدون حساب</span></div>
+  </div>
+</div>
+<nav class="botnav">
+  <div class="ni on"><span class="material-symbols-outlined fi">dashboard</span><span>الرئيسية</span></div>
+  <div class="ni" onclick="G('s-docs')"><span class="material-symbols-outlined">description</span><span>المستندات</span></div>
+  <div class="ni" onclick="G('s-tpl')"><span class="material-symbols-outlined">style</span><span>القوالب</span></div>
+  <div class="ni" onclick="G('s-set')"><span class="material-symbols-outlined">settings</span><span>الإعدادات</span></div>
+</nav>
+</div>
+
+<!-- DOCUMENTS -->
+<div id="s-docs" class="screen">
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-home')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">مستنداتي</span></div>
+  <button class="ibtn" onclick="newCV()"><span class="material-symbols-outlined fi" style="color:var(--p)">add_circle</span></button>
+</header>
+<div class="sb" style="padding:14px 18px 0">
+  <div style="position:relative;margin-bottom:12px"><input id="doc-search" class="fld" type="text" placeholder="ابحث باسمك أو المسمى الوظيفي..." oninput="renderDocs()" style="padding-right:44px"/><span class="material-symbols-outlined" style="position:absolute;right:13px;top:50%;transform:translateY(-50%);color:var(--onv);font-size:18px;pointer-events:none">search</span></div>
+  <div style="display:flex;flex-direction:row-reverse;gap:8px;margin-bottom:14px;align-items:center">
+    <span style="font-size:12px;color:var(--onv);flex-shrink:0">ترتيب:</span>
+    <select id="doc-sort" onchange="renderDocs()" style="border:1.5px solid var(--ov);border-radius:10px;padding:6px 12px;font-family:'Tajawal',sans-serif;font-size:13px;color:var(--on);background:white;outline:none;cursor:pointer;-webkit-appearance:none;direction:rtl">
+      <option value="newest">الأحدث أولاً</option>
+      <option value="oldest">الأقدم أولاً</option>
+      <option value="complete">الأكثر اكتمالاً</option>
+      <option value="alpha">أ — ي</option>
+    </select>
+    <div id="doc-count" style="font-size:12px;color:var(--onv);margin-right:auto"></div>
+  </div>
+  <div style="display:flex;flex-direction:row-reverse;gap:7px;margin-bottom:14px;overflow-x:auto" class="sbh">
+    <button class="fchip on" data-f="all" onclick="setDocF(this,'all')">الكل</button>
+    <button class="fchip" data-f="complete" onclick="setDocF(this,'complete')">مكتملة 100%</button>
+    <button class="fchip" data-f="draft" onclick="setDocF(this,'draft')">مسودات</button>
+  </div>
+  <div id="docs-list" style="padding-bottom:80px"></div>
+</div>
+<button class="fab" onclick="newCV()"><span class="material-symbols-outlined fi" style="font-size:26px">add</span></button>
+<nav class="botnav">
+  <div class="ni" onclick="G('s-home')"><span class="material-symbols-outlined">dashboard</span><span>الرئيسية</span></div>
+  <div class="ni on"><span class="material-symbols-outlined fi">description</span><span>المستندات</span></div>
+  <div class="ni" onclick="G('s-tpl')"><span class="material-symbols-outlined">style</span><span>القوالب</span></div>
+  <div class="ni" onclick="G('s-set')"><span class="material-symbols-outlined">settings</span><span>الإعدادات</span></div>
+</nav>
+</div>
+
+<!-- TEMPLATES -->
+<div id="s-tpl" class="screen">
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-home')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">اختر القالب</span></div>
+  <div style="font-family:'Cairo',sans-serif;font-size:11px;color:var(--osc);background:var(--sc);padding:3px 9px;border-radius:16px;font-weight:700">5 مجانية من 30</div>
+</header>
+<div class="sb" style="padding:14px 18px 0">
+  <div style="position:relative;margin-bottom:12px"><input id="tpl-search" class="fld" type="text" placeholder="ابحث عن قالب..." oninput="renderTpl()" style="padding-right:44px"/><span class="material-symbols-outlined" style="position:absolute;right:13px;top:50%;transform:translateY(-50%);color:var(--onv);font-size:18px;pointer-events:none">search</span></div>
+  <div id="tpl-filters" style="display:flex;flex-direction:row-reverse;gap:7px;margin-bottom:16px;overflow-x:auto" class="sbh">
+    <button class="fchip on" data-cat="all" onclick="setCat(this,'all')">الكل (30)</button>
+    <button class="fchip" data-cat="pro" onclick="setCat(this,'pro')">احترافي (10)</button>
+    <button class="fchip" data-cat="simple" onclick="setCat(this,'simple')">بسيط (6)</button>
+    <button class="fchip" data-cat="creative" onclick="setCat(this,'creative')">إبداعي (5)</button>
+    <button class="fchip" data-cat="academic" onclick="setCat(this,'academic')">أكاديمي (5)</button>
+    <button class="fchip" data-cat="tech" onclick="setCat(this,'tech')">تقني (4)</button>
+    <button class="fchip" data-cat="free" onclick="setCat(this,'free')">مجاني فقط</button>
+  </div>
+  <div id="tpl-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:11px;padding-bottom:20px"></div>
+</div>
+<nav class="botnav">
+  <div class="ni" onclick="G('s-home')"><span class="material-symbols-outlined">dashboard</span><span>الرئيسية</span></div>
+  <div class="ni" onclick="G('s-docs')"><span class="material-symbols-outlined">description</span><span>المستندات</span></div>
+  <div class="ni on"><span class="material-symbols-outlined fi">style</span><span>القوالب</span></div>
+  <div class="ni" onclick="G('s-set')"><span class="material-symbols-outlined">settings</span><span>الإعدادات</span></div>
+</nav>
+</div>
+
+<!-- PERSONAL 1/5 -->
+<div id="s-per" class="screen">
+<header class="topbar"><div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-tpl')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">سيرة</span></div><span style="font-family:'Cairo',sans-serif;font-size:12px;color:var(--onv)">1 / 5</span></header>
+<div class="sb" style="padding:16px 18px">
+  <div class="prog" style="margin-bottom:16px"><div class="progf" style="width:20%"></div></div>
+  <h1 style="font-family:'Cairo',sans-serif;font-size:20px;font-weight:700;color:var(--p);margin-bottom:4px">المعلومات الشخصية</h1>
+  <p style="color:var(--onv);font-size:13px;margin-bottom:16px">أدخل بيانات التواصل الأساسية.</p>
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div><label class="flbl">الاسم الكامل *</label><input id="p-name" class="fld" type="text" placeholder="أحمد محمد عثمان" oninput="cv.personal.fullName=this.value;autoSave()"/></div>
+    <div><label class="flbl">المسمى الوظيفي</label><input id="p-ttl" class="fld" type="text" placeholder="مهندس برمجيات أول" oninput="cv.personal.title=this.value;autoSave()"/></div>
+    <div><label class="flbl">البريد الإلكتروني</label><input id="p-eml" class="fld ltr" type="email" placeholder="name@example.com" oninput="cv.personal.email=this.value;autoSave()"/></div>
+    <div><label class="flbl">رقم الهاتف</label><div style="position:relative"><input id="p-phn" class="fld ltr" type="tel" placeholder="+249 9X XXX XXXX" oninput="cv.personal.phone=this.value;autoSave()" style="padding-right:42px"/><span class="material-symbols-outlined" style="position:absolute;right:13px;top:50%;transform:translateY(-50%);color:var(--onv);font-size:17px;pointer-events:none">phone</span></div></div>
+    <div><label class="flbl">العنوان</label><input id="p-adr" class="fld" type="text" placeholder="الخرطوم، السودان" oninput="cv.personal.address=this.value;autoSave()"/></div>
+
+    <!-- Photo upload -->
+    <div style="background:var(--scl);border-radius:12px;padding:14px">
+      <label class="flbl" style="margin-bottom:10px">الصورة الشخصية</label>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div id="photo-ring" style="width:64px;height:64px;border-radius:50%;background:var(--sch);border:2px solid var(--ov);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <span class="material-symbols-outlined" style="font-size:28px;color:var(--onv)" id="photo-icon">person</span>
+          <img id="photo-img" style="display:none;width:100%;height:100%;object-fit:cover" src="" alt=""/>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:7px">
+          <input type="file" id="photo-input" accept="image/*" style="display:none" onchange="handlePhoto(this)"/>
+          <button type="button" onclick="document.getElementById('photo-input').click()" style="background:var(--p);color:white;border:none;border-radius:10px;padding:8px 14px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;justify-content:center">
+            <span class="material-symbols-outlined" style="font-size:17px;pointer-events:none">add_photo_alternate</span>إضافة صورة
+          </button>
+          <button type="button" id="photo-del" onclick="removePhoto()" style="display:none;background:var(--errc);color:var(--err);border:1px solid var(--err);border-radius:10px;padding:6px 14px;font-family:'Tajawal',sans-serif;font-size:12px;cursor:pointer">حذف الصورة</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sudan-specific fields -->
+    <div style="border-top:1px dashed var(--ov);padding-top:12px">
+      <button type="button" id="sudan-toggle" onclick="toggleSudan(this)" style="background:rgba(0,32,69,.06);border:1.5px dashed var(--p);border-radius:10px;padding:9px 14px;width:100%;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;color:var(--p);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px">
+        <span class="material-symbols-outlined" style="font-size:18px;pointer-events:none" id="sudan-icon">expand_more</span>
+        حقول الاستمارة السودانية
+        <span style="background:var(--sc);color:var(--osc);padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">خاص بالسودان</span>
+      </button>
+      <div id="sudan-fields" style="display:none;margin-top:12px;display:none">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+          <div><label class="flbl">الجنس</label>
+            <select id="p-gender" class="fld" onchange="cv.personal.gender=this.value;autoSave()">
+              <option value="">اختر</option><option value="ذكر">ذكر</option><option value="أنثى">أنثى</option>
+            </select>
+          </div>
+          <div><label class="flbl">الحالة الاجتماعية</label>
+            <select id="p-marital" class="fld" onchange="cv.personal.marital=this.value;autoSave()">
+              <option value="">اختر</option><option value="أعزب">أعزب</option><option value="متزوج">متزوج</option><option value="مطلق">مطلق</option><option value="أرمل">أرمل</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+          <div><label class="flbl">تاريخ الميلاد</label><input id="p-dob" class="fld" type="text" placeholder="01/01/1990" oninput="cv.personal.dob=this.value;autoSave()"/></div>
+          <div><label class="flbl">مكان الميلاد</label><input id="p-pob" class="fld" type="text" placeholder="الخرطوم" oninput="cv.personal.pob=this.value;autoSave()"/></div>
+        </div>
+        <div style="margin-bottom:10px"><label class="flbl">الجنسية</label><input id="p-nat" class="fld" type="text" placeholder="سودانية" oninput="cv.personal.nationality=this.value;autoSave()"/></div>
+        <div style="margin-bottom:10px"><label class="flbl">الديانة</label>
+          <select id="p-rel" class="fld" onchange="cv.personal.religion=this.value;autoSave()">
+            <option value="">اختر</option><option value="الإسلام">الإسلام</option><option value="المسيحية">المسيحية</option><option value="أخرى">أخرى</option>
+          </select>
+        </div>
+        <div><label class="flbl">الرقم الوطني</label><input id="p-nid" class="fld ltr" type="text" placeholder="XXXXXXXXXXXXXXXXX" oninput="cv.personal.nationalId=this.value;autoSave()"/></div>
+      </div>
+    </div>
+
+    <div class="tip"><span class="material-symbols-outlined fi" style="color:var(--s);font-size:20px;flex-shrink:0;margin-top:1px">lightbulb</span><div style="font-size:12px;color:var(--onv);line-height:1.65">المسمى الوظيفي الدقيق يرفع ظهورك في نتائج بحث أصحاب العمل.</div></div>
+  </div>
+</div>
+<div class="ffoot"><div style="display:flex;gap:9px"><button class="btnp" style="flex:2" onclick="stepNext('s-edu')"><span>التالي</span><span class="material-symbols-outlined">arrow_back</span></button><button class="btno" style="flex:1" onclick="G('s-tpl')"><span class="material-symbols-outlined">arrow_forward</span>السابق</button></div></div>
+</div>
+
+<!-- EDUCATION 2/5 -->
+<div id="s-edu" class="screen">
+<header class="topbar"><div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-per')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">سيرة</span></div><span style="font-family:'Cairo',sans-serif;font-size:12px;color:var(--onv)">2 / 5</span></header>
+<div class="sb" style="padding:16px 18px">
+  <div class="prog" style="margin-bottom:16px"><div class="progf" style="width:40%"></div></div>
+  <h1 style="font-family:'Cairo',sans-serif;font-size:20px;font-weight:700;color:var(--p);margin-bottom:4px">التعليم والمؤهلات</h1>
+  <div class="tip" style="margin-bottom:14px"><span class="material-symbols-outlined fi" style="color:var(--s);font-size:20px;flex-shrink:0">lightbulb</span><div style="font-size:12px;color:var(--onv);line-height:1.65">ابدأ دائماً بأحدث مؤهل علمي (الترتيب الزمني العكسي).</div></div>
+  <div id="edulist" style="display:flex;flex-direction:column;gap:9px;margin-bottom:10px"></div>
+  <button class="adash" onclick="openMod('edu')"><span class="material-symbols-outlined" style="font-size:26px">add_circle</span>إضافة مؤهل تعليمي</button>
+</div>
+<div class="ffoot"><div style="display:flex;gap:9px"><button class="btnp" style="flex:2" onclick="G('s-exp')"><span>التالي</span><span class="material-symbols-outlined">arrow_back</span></button><button class="btno" style="flex:1" onclick="G('s-per')"><span class="material-symbols-outlined">arrow_forward</span>السابق</button></div></div>
+</div>
+
+<!-- EXPERIENCE 3/5 -->
+<div id="s-exp" class="screen">
+<header class="topbar"><div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-edu')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">سيرة</span></div><span style="font-family:'Cairo',sans-serif;font-size:12px;color:var(--onv)">3 / 5</span></header>
+<div class="sb" style="padding:16px 18px">
+  <div class="prog" style="margin-bottom:16px"><div class="progf" style="width:60%"></div></div>
+  <h1 style="font-family:'Cairo',sans-serif;font-size:20px;font-weight:700;color:var(--p);margin-bottom:4px">الخبرة العملية</h1>
+  <div class="tip" style="margin-bottom:14px"><span class="material-symbols-outlined fi" style="color:var(--s);font-size:20px;flex-shrink:0">lightbulb</span><div style="font-size:12px;color:var(--onv);line-height:1.65">استخدم: "طورت"، "أدرت"، "حققت". ركز على النتائج لا المهام.</div></div>
+  <div id="explist" style="display:flex;flex-direction:column;gap:9px;margin-bottom:10px"></div>
+  <button class="adash" onclick="openMod('exp')"><span class="material-symbols-outlined" style="font-size:26px">add_circle</span>إضافة خبرة جديدة</button>
+</div>
+<div class="ffoot"><div style="display:flex;gap:9px"><button class="btnp" style="flex:2" onclick="G('s-crs')"><span>التالي</span><span class="material-symbols-outlined">arrow_back</span></button><button class="btno" style="flex:1" onclick="G('s-edu')"><span class="material-symbols-outlined">arrow_forward</span>السابق</button></div></div>
+</div>
+
+<!-- COURSES 4/5 -->
+<div id="s-crs" class="screen">
+<header class="topbar"><div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-exp')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">سيرة</span></div><span style="font-family:'Cairo',sans-serif;font-size:12px;color:var(--onv)">4 / 5</span></header>
+<div class="sb" style="padding:16px 18px">
+  <div class="prog" style="margin-bottom:16px"><div class="progf" style="width:80%"></div></div>
+  <h1 style="font-family:'Cairo',sans-serif;font-size:20px;font-weight:700;color:var(--p);margin-bottom:4px">الدورات التدريبية</h1>
+  <div class="tip" style="margin-bottom:14px"><span class="material-symbols-outlined fi" style="color:var(--s);font-size:20px;flex-shrink:0">lightbulb</span><div style="font-size:12px;color:var(--onv);line-height:1.65">ركز على الشهادات المهنية (PMP، CPA) والدورات التقنية.</div></div>
+  <div id="crslist" style="display:flex;flex-direction:column;gap:9px;margin-bottom:10px"></div>
+  <button class="adash" onclick="openMod('crs')"><span class="material-symbols-outlined" style="font-size:26px">add_circle</span>إضافة دورة جديدة</button>
+</div>
+<div class="ffoot"><div style="display:flex;gap:9px"><button class="btnp" style="flex:2" onclick="G('s-sum')"><span>التالي</span><span class="material-symbols-outlined">arrow_back</span></button><button class="btno" style="flex:1" onclick="G('s-exp')"><span class="material-symbols-outlined">arrow_forward</span>السابق</button></div></div>
+</div>
+
+<!-- SUMMARY 5/5 -->
+<div id="s-sum" class="screen">
+<header class="topbar"><div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-crs')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">سيرة</span></div><span style="font-family:'Cairo',sans-serif;font-size:12px;color:var(--s);background:var(--sc);padding:3px 9px;border-radius:16px;font-weight:700">90%</span></header>
+<div class="sb" style="padding:16px 18px">
+  <div class="prog" style="margin-bottom:16px"><div class="progf" style="width:90%"></div></div>
+  <h1 style="font-family:'Cairo',sans-serif;font-size:20px;font-weight:700;color:var(--p);margin-bottom:4px">الملخص والمهارات</h1>
+  <div style="background:white;border-radius:14px;border:1px solid var(--ov);padding:14px;margin-bottom:12px">
+    <label class="flbl">الملخص المهني</label>
+    <textarea id="s-sm" class="fld" rows="4" placeholder="مثلاً: خبير تقني بخبرة قوية..." oninput="cv.summary=this.value;autoSave()"></textarea>
+  </div>
+  <div style="background:white;border-radius:14px;border:1px solid var(--ov);padding:14px;margin-bottom:12px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><label class="flbl" style="margin-bottom:0">المهارات</label><span id="sk-cnt" style="font-size:12px;color:var(--s);font-weight:700"></span></div>
+    <div id="sk-chips" style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px"></div>
+    <div style="display:flex;gap:7px"><input id="sk-inp" class="fld" type="text" placeholder="أضف مهارة..." style="flex:1" onkeydown="if(event.key==='Enter')addSkill()"/><button onclick="addSkill()" style="background:var(--sc);border:none;border-radius:10px;padding:0 13px;cursor:pointer;display:flex;align-items:center;color:var(--osc);flex-shrink:0;min-height:48px"><span class="material-symbols-outlined">add</span></button></div>
+  </div>
+  <div class="tip"><span class="material-symbols-outlined fi" style="color:var(--s);font-size:20px;flex-shrink:0">lightbulb</span><div style="font-size:12px;color:var(--onv);line-height:1.65">خصّص مهاراتك لكل وصف وظيفي. الكلمات المفتاحية تزيد قبولك في ATS.</div></div>
+</div>
+<div class="ffoot">
+  <button class="btnp" onclick="finishCV()" style="margin-bottom:8px"><span>إنهاء ومعاينة السيرة</span><span class="material-symbols-outlined">visibility</span></button>
+  <button class="btno" onclick="G('s-crs')"><span class="material-symbols-outlined">arrow_forward</span>السابق</button>
+</div>
+</div>
+
+<!-- PREVIEW -->
+<div id="s-prv" class="screen">
+<header class="topbar"><div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-home')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">معاينة</span></div><button class="ibtn" onclick="editCV()"><span class="material-symbols-outlined">edit_note</span></button></header>
+<div class="sb" style="padding:14px 16px">
+  <div style="display:flex;justify-content:center;margin-bottom:14px"><div style="background:white;border:1px solid var(--ov);padding:5px 13px;border-radius:20px;display:flex;align-items:center;gap:5px;box-shadow:0 2px 8px rgba(0,0,0,.05)"><span class="material-symbols-outlined fi" style="font-size:15px;color:var(--s)">cloud_off</span><span style="font-size:11px;color:var(--onv)">محفوظ محلياً — آمن وخاص</span></div></div>
+  <div id="cv-prv" style="background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,32,69,.09);border:1px solid var(--ov);margin-bottom:14px"></div>
+  <div class="tip"><span class="material-symbols-outlined fi" style="color:var(--s);font-size:18px;flex-shrink:0">lightbulb</span><p style="font-size:12px;color:var(--onv);line-height:1.65">راجع الأخطاء الإملائية والتواريخ قبل التحميل.</p></div>
+</div>
+<div style="flex-shrink:0;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid var(--ov);padding:10px 18px max(14px,env(safe-area-inset-bottom))">
+  <div style="display:flex;gap:9px;margin-bottom:10px">
+    <button class="btnp" style="flex:1" onclick="printCV()"><span class="material-symbols-outlined">download</span>تحميل PDF<span style="background:var(--sc);color:var(--osc);padding:1px 7px;border-radius:5px;font-size:10px;font-weight:700">مجاناً</span></button>
+    <button onclick="downloadWord()" style="width:48px;height:48px;border:2px solid #2b5797;color:#2b5797;background:transparent;border-radius:11px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;flex-direction:column;gap:1px" title="تحميل Word">
+      <span class="material-symbols-outlined" style="font-size:18px">article</span>
+      <span style="font-size:8px;font-family:'Tajawal',sans-serif;font-weight:700">Word</span>
+    </button>
+    <button onclick="printCV()" style="width:48px;height:48px;border:2px solid var(--s);color:var(--s);background:transparent;border-radius:11px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="material-symbols-outlined">print</span></button>
+  </div>
+  <div style="display:flex;flex-direction:row-reverse;justify-content:space-around">
+    <div class="ni" onclick="G('s-home')"><span class="material-symbols-outlined">dashboard</span><span style="font-size:10px">الرئيسية</span></div>
+    <div class="ni on"><span class="material-symbols-outlined fi">visibility</span><span style="font-size:10px">المعاينة</span></div>
+    <div class="ni" onclick="editCV()"><span class="material-symbols-outlined">edit_note</span><span style="font-size:10px">تعديل</span></div>
+    <div class="ni" onclick="G('s-set')"><span class="material-symbols-outlined">settings</span><span style="font-size:10px">الإعدادات</span></div>
+  </div>
+</div>
+</div>
+
+<!-- SETTINGS -->
+<div id="s-set" class="screen">
+<header class="topbar"><div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-home')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">الإعدادات</span></div></header>
+<div class="sb" style="padding:16px 18px">
+  <div style="background:white;border-radius:16px;border:1px solid var(--ov);padding:20px;margin-bottom:14px;text-align:center">
+    <div id="set-av" class="av" style="width:58px;height:58px;font-size:22px;margin:0 auto 10px"></div>
+    <div id="set-nm" style="font-family:'Cairo',sans-serif;font-size:16px;font-weight:700;color:var(--p);margin-bottom:14px"></div>
+    <label class="flbl">تغيير الاسم</label>
+    <input id="set-inp" class="fld" type="text" placeholder="اسمك" style="margin-bottom:10px"/>
+    <button class="btnp" onclick="updateName()">حفظ الاسم</button>
+  </div>
+  <div style="background:white;border-radius:16px;border:1px solid var(--ov);padding:16px;margin-bottom:14px"><div style="display:flex;align-items:center;gap:9px;margin-bottom:10px"><span class="material-symbols-outlined fi" style="color:var(--p)">bar_chart</span><span style="font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;color:var(--p)">إحصائياتك</span></div><div id="set-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px"></div></div>
+  <div style="background:white;border-radius:16px;border:1px solid var(--ov);padding:16px;margin-bottom:14px"><div style="display:flex;align-items:center;gap:9px;margin-bottom:8px"><span class="material-symbols-outlined fi" style="color:var(--s)">lock_open</span><span style="font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;color:var(--p)">القوالب المفتوحة</span></div><div id="set-unlocked"></div></div>
+  <div style="background:white;border-radius:16px;border:1px solid var(--ov);padding:16px;margin-bottom:14px">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
+      <span class="material-symbols-outlined fi" style="color:#7c3aed;font-size:22px">notifications_active</span>
+      <span style="font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;color:var(--p)">الإشعارات والتذكيرات</span>
+    </div>
+
+    <!-- Master toggle -->
+    <div class="notif-row">
+      <div>
+        <div style="font-size:14px;font-weight:600;color:var(--on)">تفعيل الإشعارات</div>
+        <div style="font-size:12px;color:var(--onv);margin-top:2px">السماح لسيرة بإرسال تذكيرات</div>
+      </div>
+      <label class="tgl"><input type="checkbox" id="n-master" onchange="onMasterToggle(this)"/><span class="sl"></span></label>
+    </div>
+
+    <!-- Options (shown only when enabled) -->
+    <div id="notif-opts" style="display:none;margin-top:4px">
+
+      <!-- Daily reminder -->
+      <div class="notif-row">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--on)">تذكير يومي</div>
+          <div style="font-size:11px;color:var(--onv);margin-top:2px">تذكير بتحديث سيرتك كل يوم</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <input type="time" id="n-daily-time" value="09:00"
+            style="border:1.5px solid var(--ov);border-radius:8px;padding:4px 8px;font-family:'Tajawal',sans-serif;font-size:13px;outline:none;color:var(--on);display:none"
+            onchange="saveNotifSettings()"/>
+          <label class="tgl"><input type="checkbox" id="n-daily" onchange="onDailyToggle(this)"/><span class="sl"></span></label>
+        </div>
+      </div>
+
+      <!-- Weekly reminder -->
+      <div class="notif-row">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--on)">تذكير أسبوعي</div>
+          <div style="font-size:11px;color:var(--onv);margin-top:2px">كل أسبوع: "هل جددت سيرتك؟"</div>
+        </div>
+        <label class="tgl"><input type="checkbox" id="n-weekly" onchange="saveNotifSettings()"/><span class="sl"></span></label>
+      </div>
+
+      <!-- Draft reminder -->
+      <div class="notif-row">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--on)">تذكير إكمال السيرة</div>
+          <div style="font-size:11px;color:var(--onv);margin-top:2px">تنبيه عند وجود سيرة غير مكتملة</div>
+        </div>
+        <label class="tgl"><input type="checkbox" id="n-draft" onchange="saveNotifSettings()"/><span class="sl"></span></label>
+      </div>
+
+      <!-- Old CV reminder -->
+      <div class="notif-row">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--on)">تذكير تحديث السيرة القديمة</div>
+          <div style="font-size:11px;color:var(--onv);margin-top:2px">تنبيه بعد 30 يوماً بدون تعديل</div>
+        </div>
+        <label class="tgl"><input type="checkbox" id="n-old" onchange="saveNotifSettings()"/><span class="sl"></span></label>
+      </div>
+
+      <!-- Test button -->
+      <button onclick="testNotification()" style="margin-top:12px;width:100%;background:rgba(124,58,237,.08);color:#7c3aed;border:1.5px solid #7c3aed44;border-radius:10px;padding:9px 14px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+        <span class="material-symbols-outlined" style="font-size:18px;pointer-events:none">notifications</span>
+        اختبار إشعار الآن
+      </button>
+    </div>
+
+    <!-- Status badge -->
+    <div id="notif-status" style="margin-top:10px;font-size:12px;color:var(--onv);text-align:center;display:none"></div>
+  </div>
+
+  <div style="background:white;border-radius:16px;border:1px solid var(--ov);padding:16px;margin-bottom:14px"><p style="font-size:13px;color:var(--onv);margin-bottom:12px">جميع بياناتك محفوظة على هذا الجهاز فقط.</p><button onclick="clearAll()" style="background:var(--errc);color:var(--err);border:1.5px solid var(--err);border-radius:10px;padding:10px 14px;font-family:'Tajawal',sans-serif;font-size:14px;cursor:pointer;width:100%">مسح جميع البيانات</button></div>
+  <div style="background:white;border-radius:16px;border:1px solid var(--ov);padding:16px;text-align:center;margin-bottom:18px"><div class="brand" style="font-size:22px;margin-bottom:3px">سيرة</div><div style="font-size:12px;color:var(--onv)">الإصدار 2.0.0 · 30 قالب · بدون إنترنت</div></div>
+</div>
+<nav class="botnav">
+  <div class="ni" onclick="G('s-home')"><span class="material-symbols-outlined">dashboard</span><span>الرئيسية</span></div>
+  <div class="ni" onclick="G('s-docs')"><span class="material-symbols-outlined">description</span><span>المستندات</span></div>
+  <div class="ni" onclick="G('s-tpl')"><span class="material-symbols-outlined">style</span><span>القوالب</span></div>
+  <div class="ni on"><span class="material-symbols-outlined fi">settings</span><span>الإعدادات</span></div>
+</nav>
+</div>
+
+<!-- CERTIFICATE SCREEN -->
+<div id="s-cert" class="screen">
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:9px"><button class="ibtn" onclick="G('s-home')"><span class="material-symbols-outlined">arrow_forward</span></button><span class="brand">الشهادات</span></div>
+  <button class="ibtn" onclick="newCert()"><span class="material-symbols-outlined fi" style="color:#7c3aed">add_circle</span></button>
+</header>
+<div class="sb" style="padding:14px 18px 0">
+
+  <!-- Cert type tabs -->
+  <div style="display:flex;flex-direction:row-reverse;gap:7px;margin-bottom:16px;overflow-x:auto" class="sbh">
+    <button class="fchip on" data-ct="work" onclick="setCertType(this,'work')">شهادة خبرة</button>
+    <button class="fchip" data-ct="training" onclick="setCertType(this,'training')">دورة تدريبية</button>
+    <button class="fchip" data-ct="appreciation" onclick="setCertType(this,'appreciation')">شهادة تقدير</button>
+    <button class="fchip" data-ct="attendance" onclick="setCertType(this,'attendance')">شهادة حضور</button>
+    <button class="fchip" data-ct="other" onclick="setCertType(this,'other')">أخرى</button>
+  </div>
+
+  <!-- Cert form -->
+  <div style="background:white;border-radius:16px;border:1px solid var(--ov);padding:16px;margin-bottom:14px">
+    <h3 style="font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;color:var(--p);margin-bottom:14px">بيانات الشهادة</h3>
+    <div style="display:flex;flex-direction:column;gap:11px">
+      <div><label class="flbl">اسم المستفيد *</label><input id="c-recip" class="fld" type="text" placeholder="أحمد محمد عثمان"/></div>
+      <div><label class="flbl">الجهة المانحة *</label><input id="c-org" class="fld" type="text" placeholder="شركة / مؤسسة / معهد"/></div>
+      <div><label class="flbl">موضوع الشهادة *</label><input id="c-subj" class="fld" type="text" placeholder="مثال: الحصول على دورة إدارة المشاريع"/></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div><label class="flbl">تاريخ الإصدار</label><input id="c-date" class="fld" type="text" placeholder="2024/01/15"/></div>
+        <div><label class="flbl">رقم الشهادة</label><input id="c-num" class="fld ltr" type="text" placeholder="001/2024"/></div>
+      </div>
+      <div><label class="flbl">المدة / التفاصيل (اختياري)</label><textarea id="c-detail" class="fld" rows="2" placeholder="مثال: 40 ساعة تدريبية خلال الفترة من..."></textarea></div>
+      <div><label class="flbl">المدينة</label><input id="c-city" class="fld" type="text" placeholder="الخرطوم"/></div>
+    </div>
+  </div>
+
+  <!-- Preview area -->
+  <div style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <h3 style="font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;color:var(--p)">معاينة الشهادة</h3>
+      <button onclick="refreshCert()" style="background:var(--sc);border:none;border-radius:8px;padding:5px 12px;font-family:'Cairo',sans-serif;font-size:12px;font-weight:600;color:var(--osc);cursor:pointer">تحديث</button>
+    </div>
+    <div id="cert-preview" style="background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,32,69,.09);border:1px solid var(--ov)">
+      <div style="text-align:center;padding:30px;color:var(--onv);font-size:13px">اضغط "تحديث" لمعاينة الشهادة</div>
+    </div>
+  </div>
+
+  <!-- Action buttons -->
+  <div style="display:flex;gap:9px;margin-bottom:20px">
+    <button class="btnp" style="flex:2" onclick="printCert()">
+      <span class="material-symbols-outlined">print</span>طباعة / PDF
+    </button>
+    <button onclick="downloadCertWord()" style="flex:1;background:rgba(43,87,151,.1);color:#2b5797;border:1.5px solid #2b5797;border-radius:12px;padding:12px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+      <span class="material-symbols-outlined" style="font-size:18px;pointer-events:none">article</span>Word
+    </button>
+  </div>
+</div>
+<nav class="botnav">
+  <div class="ni" onclick="G('s-home')"><span class="material-symbols-outlined">dashboard</span><span>الرئيسية</span></div>
+  <div class="ni" onclick="G('s-docs')"><span class="material-symbols-outlined">description</span><span>المستندات</span></div>
+  <div class="ni on"><span class="material-symbols-outlined fi">workspace_premium</span><span>الشهادات</span></div>
+  <div class="ni" onclick="G('s-set')"><span class="material-symbols-outlined">settings</span><span>الإعدادات</span></div>
+</nav>
+</div>
+
+<!-- MODAL: EDUCATION -->
+<div id="m-edu" class="modal" onclick="if(event.target===this)closeM('edu')"><div class="msh"><div class="mhdl"></div><div class="mtit" id="m-edu-t">إضافة مؤهل</div><div style="display:flex;flex-direction:column;gap:11px"><div><label class="flbl">الدرجة العلمية *</label><input id="e-deg" class="fld" type="text" placeholder="بكالوريوس علوم الحاسوب"/></div><div><label class="flbl">المؤسسة *</label><input id="e-sch" class="fld" type="text" placeholder="جامعة الخرطوم"/></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:9px"><div><label class="flbl">سنة البدء</label><input id="e-sy" class="fld" type="text" placeholder="٢٠١٨"/></div><div><label class="flbl">سنة الانتهاء</label><input id="e-ey" class="fld" type="text" placeholder="٢٠٢٢"/></div></div><div style="display:flex;gap:9px;margin-top:3px"><button class="btnp" style="flex:2" onclick="saveEdu()">حفظ</button><button class="btno" style="flex:1" onclick="closeM('edu')">إلغاء</button></div></div></div></div>
+
+<!-- MODAL: EXPERIENCE -->
+<div id="m-exp" class="modal" onclick="if(event.target===this)closeM('exp')"><div class="msh"><div class="mhdl"></div><div class="mtit" id="m-exp-t">إضافة خبرة</div><div style="display:flex;flex-direction:column;gap:11px"><div><label class="flbl">المسمى الوظيفي *</label><input id="x-ttl" class="fld" type="text" placeholder="مدير مبيعات"/></div><div><label class="flbl">الشركة *</label><input id="x-co" class="fld" type="text" placeholder="شركة النيل الكبرى"/></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:9px"><div><label class="flbl">تاريخ البدء</label><input id="x-sd" class="fld" type="text" placeholder="يناير ٢٠٢٠"/></div><div><label class="flbl">تاريخ الانتهاء</label><input id="x-ed" class="fld" type="text" placeholder="ديسمبر ٢٠٢٣"/></div></div><div style="display:flex;align-items:center;gap:9px;justify-content:flex-end"><label style="font-size:14px;color:var(--on);cursor:pointer" for="x-cur">العمل الحالي</label><input id="x-cur" type="checkbox" style="width:18px;height:18px;accent-color:var(--p);cursor:pointer" onchange="var ed=document.getElementById('x-ed');ed.disabled=this.checked;if(this.checked)ed.value='الحالي'"/></div><div><label class="flbl">الوصف</label><textarea id="x-dsc" class="fld" rows="3" placeholder="أبرز إنجازاتك..."></textarea></div><div style="display:flex;gap:9px;margin-top:3px"><button class="btnp" style="flex:2" onclick="saveExp()">حفظ</button><button class="btno" style="flex:1" onclick="closeM('exp')">إلغاء</button></div></div></div></div>
+
+<!-- MODAL: COURSE -->
+<div id="m-crs" class="modal" onclick="if(event.target===this)closeM('crs')"><div class="msh"><div class="mhdl"></div><div class="mtit" id="m-crs-t">إضافة دورة</div><div style="display:flex;flex-direction:column;gap:11px"><div><label class="flbl">اسم الدورة *</label><input id="c-nm" class="fld" type="text" placeholder="PMP Certification"/></div><div><label class="flbl">الجهة المانحة</label><input id="c-pr" class="fld" type="text" placeholder="معهد إدارة المشاريع"/></div><div><label class="flbl">التاريخ</label><input id="c-dt" class="fld" type="text" placeholder="أكتوبر ٢٠٢٣"/></div><div><label class="flbl">رابط الشهادة</label><input id="c-url" class="fld ltr" type="url" placeholder="https://..."/></div><div style="display:flex;gap:9px;margin-top:3px"><button class="btnp" style="flex:2" onclick="saveCrs()">حفظ</button><button class="btno" style="flex:1" onclick="closeM('crs')">إلغاء</button></div></div></div></div>
+
+<!-- MODAL: AD UNLOCK -->
+<div id="m-ad" class="modal"><div class="msh"><div class="mhdl"></div>
+<div style="text-align:center;padding:0 10px 4px">
+  <div style="font-family:'Cairo',sans-serif;font-size:16px;font-weight:700;color:var(--p);margin-bottom:4px" id="ad-tpl-name">فتح القالب</div>
+  <div style="font-size:12px;color:var(--onv);margin-bottom:18px">شاهد الإعلان لفتح هذا القالب مجاناً</div>
+  <div style="background:linear-gradient(135deg,#f0f4ff,#e8f0fe);border-radius:14px;padding:20px 16px;margin-bottom:18px;border:1px solid #c7d7fd;position:relative">
+    <div style="position:absolute;top:8px;right:8px;background:#4285f4;color:white;font-size:9px;padding:2px 6px;border-radius:4px;font-family:'Tajawal',sans-serif">إعلان</div>
+    <div style="font-family:'Cairo',sans-serif;font-size:18px;font-weight:700;color:#1a73e8;margin-bottom:6px">طوّر مسيرتك المهنية</div>
+    <div style="font-size:13px;color:#444;margin-bottom:12px;line-height:1.5">اكتشف أفضل الفرص الوظيفية في السوق</div>
+    <div style="background:#1a73e8;color:white;padding:8px 20px;border-radius:20px;display:inline-block;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600">اعرف أكثر</div>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:20px">
+    <div class="ad-circle">
+      <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="#e0e3e5" stroke-width="6"/><circle id="ad-arc" cx="40" cy="40" r="34" fill="none" stroke="#fed488" stroke-width="6" stroke-linecap="round" stroke-dasharray="213.6" stroke-dashoffset="0" style="transition:stroke-dashoffset 1s linear"/></svg>
+      <span id="ad-num">5</span>
+    </div>
+    <div style="font-size:12px;color:var(--onv)">ثانية متبقية</div>
+  </div>
+  <button id="ad-open-btn" class="btnp" onclick="completeAd()" disabled style="opacity:.4"><span>فتح القالب الآن</span><span class="material-symbols-outlined">lock_open</span></button>
+  <button onclick="closeM('ad');clearAdTimer()" style="margin-top:8px;width:100%;background:none;border:none;color:var(--onv);font-family:'Tajawal',sans-serif;font-size:14px;cursor:pointer;padding:8px">إلغاء</button>
+</div>
+</div></div>
+
+<!-- MODAL: CV MENU -->
+<div id="m-menu" class="modal" onclick="if(event.target===this)closeM('menu')"><div class="msh"><div class="mhdl"></div><div id="m-menu-nm" style="font-family:'Cairo',sans-serif;font-size:14px;color:var(--onv);text-align:center;margin-bottom:10px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 10px"></div><div style="display:flex;flex-direction:column;gap:2px"><button class="mrow" onclick="menuView()"><span class="material-symbols-outlined fi" style="color:var(--p)">visibility</span>معاينة</button><button class="mrow" onclick="menuEdit()"><span class="material-symbols-outlined" style="color:var(--s)">edit_note</span>تعديل</button><button class="mrow" onclick="menuChangeTpl()"><span class="material-symbols-outlined" style="color:var(--onv)">style</span>تغيير القالب</button><button class="mrow" onclick="menuDup()"><span class="material-symbols-outlined" style="color:var(--onv)">content_copy</span>نسخ</button><div style="height:1px;background:var(--ov);margin:4px 0"></div><button class="mrow red" onclick="menuDel()"><span class="material-symbols-outlined">delete</span>حذف</button></div><div style="height:6px"></div></div></div>
+
+<!-- MODAL: DELETE -->
+<div id="m-del" class="modal" onclick="if(event.target===this)closeM('del')"><div class="msh"><div class="mhdl"></div><div style="text-align:center;margin-bottom:6px"><span class="material-symbols-outlined fi" style="font-size:40px;color:var(--err)">delete_forever</span></div><div class="mtit" style="text-align:center">تأكيد الحذف</div><p style="text-align:center;color:var(--onv);font-size:14px;margin-bottom:18px">هل أنت متأكد؟ لا يمكن التراجع.</p><div style="display:flex;gap:9px"><button id="del-ok" class="btnp" style="flex:1;background:var(--err);border-bottom-color:#7a1111">حذف</button><button class="btno" style="flex:1" onclick="closeM('del')">إلغاء</button></div></div></div>
+
+<div id="toast"></div>
+<div id="cvprint"></div>
+<script>
+var T=[
+{id:'executive',n:'التنفيذي',c:'pro',f:1,t:0,p:'#002045',a:'#fed488',bg:'#fff',l:'H',desc:'للخبراء والمدراء'},
+{id:'simple',n:'البسيط',c:'simple',f:1,t:0,p:'#374151',a:'#818cf8',bg:'#fff',l:'C',desc:'نظيف وعصري'},
+{id:'modern',n:'العصري',c:'pro',f:1,t:0,p:'#0f172a',a:'#38bdf8',bg:'#f8fafc',l:'H',desc:'أناقة المعاصرة'},
+{id:'classic',n:'الكلاسيكي',c:'academic',f:1,t:0,p:'#1a1a2e',a:'#e8b84b',bg:'#fffef7',l:'T',desc:'الكلاسيك الراقي'},
+{id:'minimal',n:'المينيمال',c:'simple',f:1,t:0,p:'#111',a:'#ef4444',bg:'#fff',l:'M',desc:'أبسط ما يكون'},
+{id:'corporate',n:'الشركات',c:'pro',f:0,t:8,p:'#003366',a:'#ff6b35',bg:'#fff',l:'H',desc:'بيئات الشركات الكبرى'},
+{id:'business',n:'الأعمال',c:'pro',f:0,t:8,p:'#1e3a5f',a:'#ffd700',bg:'#fff',l:'H',desc:'لرجال الأعمال'},
+{id:'formal',n:'الرسمي',c:'pro',f:0,t:10,p:'#2c3e50',a:'#27ae60',bg:'#fff',l:'H',desc:'الوقار والرسمية'},
+{id:'senior',n:'كبير المسؤولين',c:'pro',f:0,t:12,p:'#1a0a2e',a:'#c9a96e',bg:'#faf9f7',l:'H',desc:'للقيادات التنفيذية'},
+{id:'director',n:'المدير التنفيذي',c:'pro',f:0,t:15,p:'#0a0a0a',a:'#d4af37',bg:'#fff',l:'H',desc:'الذهب والفخامة'},
+{id:'navbar',n:'القيادي',c:'pro',f:0,t:10,p:'#14213d',a:'#fca311',bg:'#fff',l:'H',desc:'للقادة والمدراء'},
+{id:'design',n:'المصمم',c:'creative',f:0,t:8,p:'#6c3483',a:'#f39c12',bg:'#fdfcff',l:'S',desc:'للمصممين والمبدعين'},
+{id:'colorful',n:'الملون',c:'creative',f:0,t:8,p:'#e74c3c',a:'#3498db',bg:'#fff',l:'S',desc:'ألوان تعبر عنك'},
+{id:'artistic',n:'الفني',c:'creative',f:0,t:10,p:'#2e4057',a:'#f76f53',bg:'#fff',l:'S',desc:'لأصحاب الموهبة'},
+{id:'bold',n:'الجريء',c:'creative',f:0,t:10,p:'#000',a:'#ff0050',bg:'#fff',l:'S',desc:'لمن يجرؤ على الاختلاف'},
+{id:'elegant',n:'الأنيق',c:'creative',f:0,t:12,p:'#1c1c1c',a:'#c9a96e',bg:'#fffdf9',l:'S',desc:'الأناقة الهادئة'},
+{id:'research',n:'الباحث',c:'academic',f:0,t:8,p:'#003049',a:'#fcbf49',bg:'#fff',l:'T',desc:'للباحثين العلميين'},
+{id:'thesis',n:'الأطروحة',c:'academic',f:0,t:8,p:'#264653',a:'#2a9d8f',bg:'#f7faf9',l:'T',desc:'للدراسات العليا'},
+{id:'scholar',n:'العالم',c:'academic',f:0,t:10,p:'#1b1b2f',a:'#e2b96f',bg:'#fffef8',l:'T',desc:'للأكاديميين والعلماء'},
+{id:'professor',n:'الأستاذ',c:'academic',f:0,t:10,p:'#2d3436',a:'#00cec9',bg:'#f0fafa',l:'T',desc:'للأساتذة والمحاضرين'},
+{id:'academic2',n:'الجامعي',c:'academic',f:0,t:12,p:'#3a0ca3',a:'#f72585',bg:'#fff',l:'T',desc:'للطلاب والخريجين'},
+{id:'developer',n:'المطور',c:'tech',f:0,t:8,p:'#0d1117',a:'#58a6ff',bg:'#0d1117',l:'K',desc:'لمطوري البرمجيات'},
+{id:'engineer',n:'المهندس',c:'tech',f:0,t:8,p:'#1a1a2e',a:'#00ff88',bg:'#1a1a2e',l:'K',desc:'للمهندسين التقنيين'},
+{id:'tech',n:'التقني',c:'tech',f:0,t:10,p:'#16213e',a:'#e94560',bg:'#16213e',l:'K',desc:'للتقنيين الرقميين'},
+{id:'digital',n:'الرقمي',c:'tech',f:0,t:10,p:'#010409',a:'#00d2ff',bg:'#010409',l:'K',desc:'للعصر الرقمي'},
+{id:'clean2',n:'النظيف',c:'simple',f:0,t:5,p:'#2b2d42',a:'#ef233c',bg:'#fff',l:'C',desc:'نظافة في أبهى صورها'},
+{id:'flat',n:'المسطح',c:'simple',f:0,t:5,p:'#457b9d',a:'#1d3557',bg:'#f1faee',l:'C',desc:'تصميم مسطح عصري'},
+{id:'light',n:'الفاتح',c:'simple',f:0,t:5,p:'#22223b',a:'#c77dff',bg:'#fff',l:'C',desc:'خفيف وهادئ'},
+{id:'mono',n:'الأحادي',c:'simple',f:0,t:8,p:'#212121',a:'#757575',bg:'#fafafa',l:'M',desc:'أحادية اللون'},
+{id:'pastel',n:'الباستيل',c:'simple',f:0,t:8,p:'#5e60ce',a:'#ff6b6b',bg:'#fff5f5',l:'C',desc:'ألوان ناعمة ومريحة'}
+];
+
+var cv,cvList=[],userName='',editI={t:null,i:-1},selId=null;
+var unlocked=[],adPending=null,adTimer=null,adSec=0,adTotal=0;
+var tplCat='all',docFilt='all';
+
+function mkCV(){return{id:Date.now()+'_'+Math.random().toString(36).slice(2,6),template:'executive',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),personal:{fullName:'',title:'',email:'',phone:'',address:''},education:[],experience:[],courses:[],summary:'',skills:[]}}
+cv=mkCV();
+
+function autoSave(){cv.updatedAt=new Date().toISOString();try{localStorage.setItem('sira_cv',JSON.stringify(cv));localStorage.setItem('sira_cl',JSON.stringify(cvList));localStorage.setItem('sira_u',userName);localStorage.setItem('sira_ul',JSON.stringify(unlocked))}catch(e){}}
+function loadData(){try{var d=localStorage.getItem('sira_cv');if(d)cv=JSON.parse(d);var l=localStorage.getItem('sira_cl');if(l)cvList=JSON.parse(l);userName=localStorage.getItem('sira_u')||'';var ul=localStorage.getItem('sira_ul');if(ul)unlocked=JSON.parse(ul)}catch(e){}}
+
+var hist=[];
+function G(id,noH){
+  var prev=document.querySelector('.screen.active');
+  if(prev&&!noH&&prev.id!==id)hist.push(prev.id);
+  document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active')});
+  var el=document.getElementById(id);if(!el)return;
+  el.classList.add('active','ani');setTimeout(function(){el.classList.remove('ani')},280);
+  if(id==='s-home')renderHome();
+  if(id==='s-tpl')renderTpl();
+  if(id==='s-docs')renderDocs();
+  if(id==='s-cert')newCert();
+  if(id==='s-per')setTimeout(fillPer,40);
+  if(id==='s-edu')renderEdu();
+  if(id==='s-exp')renderExp();
+  if(id==='s-crs')renderCrs();
+  if(id==='s-sum')renderSum();
+  if(id==='s-prv')renderPrv();
+  if(id==='s-set')renderSet();
+}
+function goBack(){if(hist.length)G(hist.pop(),true);else G('s-home',true)}
+document.addEventListener('backbutton',goBack,false);
+
+var _tt;
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(_tt);_tt=setTimeout(function(){t.classList.remove('show')},2800)}
+
+function initApp(){loadData();var li=document.getElementById('l-name');if(li&&userName)li.value=userName;if(userName||cvList.length)G('s-home',true);else G('s-landing',true)}
+function startApp(){var ni=document.getElementById('l-name');var n=(ni?ni.value:'').trim();if(!n){toast('من فضلك أدخل اسمك');if(ni)ni.focus();return}userName=n;autoSave();G('s-home')}
+
+function getTpl(id){return T.find(function(t){return t.id===id})||T[0]}
+function calcPct(c){var s=0;if(c.personal.fullName)s++;if(c.personal.email||c.personal.phone)s++;if(c.education.length)s++;if(c.experience.length)s++;if(c.summary||c.skills.length)s++;return Math.round(s/5*100)}
+function fmtD(iso){if(!iso)return'';try{return new Date(iso).toLocaleDateString('ar-SD',{month:'short',day:'numeric'})}catch(e){return''}}
+
+function renderHome(){
+  var l=(userName||'م').charAt(0);
+  var av=document.getElementById('hav'),gr=document.getElementById('hgreet'),dc=document.getElementById('h-doc-cnt');
+  if(av)av.textContent=l;
+  if(gr)gr.textContent='أهلاً بك، '+(userName||'مستخدم')+'!';
+  if(dc)dc.textContent=cvList.length?cvList.length+' سيرة محفوظة':'اضغط لعرض سيَرك';
+  var el=document.getElementById('hlist');if(!el)return;
+  var recent=cvList.slice(0,3);
+  if(!recent.length){el.innerHTML='<div style="text-align:center;padding:20px 0 24px;color:var(--onv)"><span class="material-symbols-outlined" style="font-size:44px;opacity:.2;display:block;margin-bottom:8px">description</span><div style="font-size:13px">لا توجد سيَر بعد</div></div>';return}
+  el.innerHTML=recent.map(function(c){return cvMiniCard(c)}).join('');
+}
+function cvMiniCard(c){
+  var pct=calcPct(c),col=pct===100?'#16a34a':'var(--p)',tpl=getTpl(c.template);
+  return'<div class="cvc" style="margin-bottom:10px;display:flex;overflow:hidden">'
+    +'<div style="width:70px;flex-shrink:0;cursor:pointer" onclick="openCV(\''+c.id+'\')">'
+    +'<div style="height:100%;min-height:76px;background:'+tpl.p+';display:flex;align-items:center;justify-content:center;padding:8px">'
+    +'<div style="text-align:center"><div style="width:20px;height:2px;background:'+tpl.a+';border-radius:1px;margin:0 auto 5px"></div>'
+    +'<div style="font-size:9px;font-weight:700;color:rgba(255,255,255,.9);line-height:1.3">'+esc(c.personal.fullName||'؟')+'</div>'
+    +(c.personal.title?'<div style="font-size:7px;color:rgba(255,255,255,.6);margin-top:2px">'+esc(c.personal.title)+'</div>':'')
+    +'</div></div></div>'
+    +'<div style="flex:1;padding:11px 11px 9px;cursor:pointer;min-width:0" onclick="openCV(\''+c.id+'\')">'
+    +'<div style="font-family:\'Cairo\',sans-serif;font-size:14px;font-weight:700;color:var(--p);margin-bottom:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(c.personal.fullName||'سيرة بدون اسم')+'</div>'
+    +'<div style="font-size:12px;color:var(--onv);margin-bottom:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(c.personal.title||'بدون مسمى')+'</div>'
+    +'<div style="display:flex;align-items:center;gap:7px"><div style="flex:1;height:4px;background:var(--sch);border-radius:2px;overflow:hidden"><div style="height:100%;background:'+col+';width:'+pct+'%;border-radius:2px"></div></div>'
+    +'<span style="font-size:10px;color:var(--onv);flex-shrink:0">'+pct+'%</span></div>'
+    +'<div style="display:flex;align-items:center;gap:4px;margin-top:5px"><span class="material-symbols-outlined" style="font-size:11px;color:var(--onv)">schedule</span>'
+    +'<span style="font-size:11px;color:var(--onv)">'+fmtD(c.updatedAt)+'</span>'
+    +'<span style="font-size:10px;color:'+tpl.p+';background:'+tpl.a+'33;padding:1px 6px;border-radius:8px;margin-right:4px;font-weight:600">'+tpl.n+'</span></div></div>'
+    +'<div style="padding:7px 7px 7px 4px;display:flex;align-items:flex-start"><button class="ibtn" onclick="event.stopPropagation();openMenu(\''+c.id+'\')">'
+    +'<span class="material-symbols-outlined" style="font-size:20px">more_vert</span></button></div></div>';
+}
+function newCV(){cv=mkCV();autoSave();G('s-tpl')}
+function openCV(id){var f=cvList.find(function(c){return c.id===id});if(!f)return;cv=JSON.parse(JSON.stringify(f));autoSave();G('s-prv')}
+
+// ── DOCUMENTS ──────────────────────────────
+function setDocF(el,f){docFilt=f;document.querySelectorAll('[data-f]').forEach(function(b){b.classList.remove('on')});el.classList.add('on');renderDocs()}
+function renderDocs(){
+  var search=(document.getElementById('doc-search')||{}).value||'';
+  var sort=(document.getElementById('doc-sort')||{}).value||'newest';
+  var el=document.getElementById('docs-list'),cnt=document.getElementById('doc-count');if(!el)return;
+  var list=cvList.slice();
+  if(docFilt==='complete')list=list.filter(function(c){return calcPct(c)===100});
+  if(docFilt==='draft')list=list.filter(function(c){return calcPct(c)<100});
+  if(search.trim()){var s=search.trim().toLowerCase();list=list.filter(function(c){return(c.personal.fullName||'').toLowerCase().includes(s)||(c.personal.title||'').toLowerCase().includes(s)})}
+  if(sort==='newest')list.sort(function(a,b){return new Date(b.updatedAt)-new Date(a.updatedAt)});
+  if(sort==='oldest')list.sort(function(a,b){return new Date(a.updatedAt)-new Date(b.updatedAt)});
+  if(sort==='complete')list.sort(function(a,b){return calcPct(b)-calcPct(a)});
+  if(sort==='alpha')list.sort(function(a,b){return(a.personal.fullName||'').localeCompare(b.personal.fullName||'')});
+  if(cnt)cnt.textContent=list.length+' سيرة';
+  if(!list.length){el.innerHTML='<div style="text-align:center;padding:40px 16px;color:var(--onv)"><span class="material-symbols-outlined" style="font-size:52px;opacity:.2;display:block;margin-bottom:12px">search_off</span><div style="font-family:\'Cairo\',sans-serif;font-size:15px;font-weight:600;color:var(--p);margin-bottom:4px">لا توجد نتائج</div><div style="font-size:13px;margin-bottom:16px">جرّب تغيير الفلتر أو كلمة البحث</div><button class="btnp" onclick="newCV()" style="max-width:200px;margin:0 auto">إنشاء سيرة جديدة</button></div>';return}
+  el.innerHTML=list.map(function(c){return docCard(c)}).join('');
+}
+function docCard(c){
+  var pct=calcPct(c),col=pct===100?'#16a34a':'var(--p)',tpl=getTpl(c.template);
+  var status=pct===100?'<span style="background:#dcfce7;color:#16a34a;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">مكتملة</span>':'<span style="background:var(--sc);color:var(--osc);padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">مسودة</span>';
+  return'<div class="doc-card">'
+    +'<div style="width:78px;flex-shrink:0;cursor:pointer" onclick="openCV(\''+c.id+'\')">'
+    +'<div style="height:100%;min-height:92px;background:'+tpl.p+';display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:10px">'
+    +'<div style="width:28px;height:3px;background:'+tpl.a+';border-radius:2px"></div>'
+    +'<div style="font-size:8px;font-weight:700;color:rgba(255,255,255,.9);line-height:1.3;text-align:center">'+esc(c.personal.fullName||'؟')+'</div>'
+    +'<div style="width:24px;height:1.5px;background:rgba(255,255,255,.2);border-radius:1px"></div>'
+    +'<div style="width:32px;height:1.5px;background:rgba(255,255,255,.15);border-radius:1px"></div>'
+    +'<div style="width:20px;height:1.5px;background:rgba(255,255,255,.1);border-radius:1px"></div>'
+    +'</div></div>'
+    +'<div style="flex:1;padding:11px 11px 9px;min-width:0;cursor:pointer" onclick="openCV(\''+c.id+'\')">'
+    +'<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:4px">'
+    +'<div style="font-family:\'Cairo\',sans-serif;font-size:14px;font-weight:700;color:var(--p);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1">'+esc(c.personal.fullName||'سيرة بدون اسم')+'</div>'
+    +status+'</div>'
+    +'<div style="font-size:12px;color:var(--onv);margin-bottom:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(c.personal.title||'بدون مسمى')+'</div>'
+    +'<div style="display:flex;align-items:center;gap:7px;margin-bottom:6px"><div style="flex:1;height:4px;background:var(--sch);border-radius:2px;overflow:hidden"><div style="height:100%;background:'+col+';width:'+pct+'%;border-radius:2px"></div></div>'
+    +'<span style="font-size:10px;color:var(--onv);flex-shrink:0">'+pct+'%</span></div>'
+    +'<div style="display:flex;align-items:center;gap:6px">'
+    +'<span style="font-size:10px;color:'+tpl.p+';background:'+tpl.a+'33;padding:1px 7px;border-radius:8px;font-weight:600">'+tpl.n+'</span>'
+    +'<span style="font-size:11px;color:var(--onv)">'+fmtD(c.updatedAt)+'</span></div></div>'
+    +'<div style="padding:8px 8px 8px 4px;display:flex;align-items:flex-start"><button class="ibtn" onclick="event.stopPropagation();openMenu(\''+c.id+'\')">'
+    +'<span class="material-symbols-outlined" style="font-size:20px">more_vert</span></button></div></div>';
+}
+
+// ── TEMPLATES ──────────────────────────────
+function setCat(el,cat){tplCat=cat;document.querySelectorAll('[data-cat]').forEach(function(b){b.classList.remove('on')});el.classList.add('on');renderTpl()}
+function renderTpl(){
+  var search=(document.getElementById('tpl-search')||{}).value||'';
+  var el=document.getElementById('tpl-grid');if(!el)return;
+  var list=T.slice();
+  if(tplCat==='free')list=list.filter(function(t){return t.f});
+  else if(tplCat!=='all')list=list.filter(function(t){return t.c===tplCat});
+  if(search.trim()){var s=search.trim().toLowerCase();list=list.filter(function(t){return t.n.includes(s)||t.desc.includes(s)||t.c.includes(s)})}
+  el.innerHTML=list.map(function(t){return tplCard(t)}).join('');
+}
+function tplCard(tpl){
+  var isUL=tpl.f||unlocked.indexOf(tpl.id)>=0;
+  var catLbl={'pro':'احترافي','simple':'بسيط','creative':'إبداعي','academic':'أكاديمي','tech':'تقني'}[tpl.c]||'';
+  var badge=tpl.f
+    ?'<span style="position:absolute;top:7px;left:7px;background:rgba(22,163,74,.85);color:white;padding:2px 7px;border-radius:5px;font-size:9px;font-weight:700;font-family:\'Tajawal\',sans-serif">مجاني</span>'
+    :(isUL
+      ?'<span style="position:absolute;top:7px;left:7px;background:rgba(234,179,8,.85);color:#1a1a1a;padding:2px 7px;border-radius:5px;font-size:9px;font-weight:700;font-family:\'Tajawal\',sans-serif">مفتوح</span>'
+      :'<span style="position:absolute;top:7px;left:7px;background:rgba(0,0,0,.55);color:white;padding:2px 7px;border-radius:5px;font-size:9px;font-weight:700;display:inline-flex;align-items:center;gap:2px;font-family:\'Tajawal\',sans-serif;backdrop-filter:blur(4px)"><span class="material-symbols-outlined fi" style="font-size:11px;pointer-events:none">lock</span>'+tpl.t+'ث</span>');
+  return'<div class="tpl-card" onclick="chooseTpl(\''+tpl.id+'\')">'
+    +'<div style="aspect-ratio:3/4;position:relative;overflow:hidden">'+buildThumb(tpl)+badge
+    +'<span style="position:absolute;top:7px;right:7px;background:rgba(0,0,0,.45);color:white;padding:2px 7px;border-radius:5px;font-size:9px;font-weight:700;font-family:\'Tajawal\',sans-serif;backdrop-filter:blur(4px)">'+catLbl+'</span>'
+    +'</div>'
+    +'<div style="padding:9px;text-align:right">'
+    +'<div style="font-family:\'Cairo\',sans-serif;font-size:13px;font-weight:700;color:var(--p);margin-bottom:1px">'+tpl.n+'</div>'
+    +'<div style="font-size:11px;color:var(--onv)">'+tpl.desc+'</div>'
+    +'</div></div>';
+}
+function buildThumb(t){
+  var p=t.p,a=t.a,bg=t.bg||'#fff';
+  if(t.l==='H')return'<div style="width:100%;height:100%;background:'+bg+'"><div style="background:'+p+';padding:14px 10px 10px;text-align:center"><div style="width:36px;height:2.5px;background:'+a+';border-radius:1px;margin:0 auto 7px"></div><div style="height:8px;background:rgba(255,255,255,.7);border-radius:3px;width:70%;margin:0 auto 4px"></div><div style="height:4px;background:rgba(255,255,255,.4);border-radius:2px;width:48%;margin:0 auto 6px"></div><div style="display:flex;justify-content:center;gap:4px"><div style="height:3px;background:rgba(255,255,255,.3);border-radius:1px;width:18px"></div><div style="height:3px;background:rgba(255,255,255,.3);border-radius:1px;width:22px"></div></div></div><div style="padding:8px 10px"><div style="height:2px;background:'+a+';border-radius:1px;width:42%;margin-bottom:5px"></div><div style="height:3px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:3px;background:#e5e7eb;border-radius:1px;width:80%;margin-bottom:2px"></div><div style="height:3px;background:#e5e7eb;border-radius:1px;width:58%;margin-bottom:6px"></div><div style="height:2px;background:'+a+';border-radius:1px;width:42%;margin-bottom:5px"></div><div style="height:3px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:3px;background:#e5e7eb;border-radius:1px;width:70%"></div></div></div>';
+  if(t.l==='C')return'<div style="width:100%;height:100%;background:'+bg+';padding:10px"><div style="height:3px;background:'+p+';border-radius:2px;margin-bottom:8px"></div><div style="height:8px;background:'+p+';border-radius:3px;width:65%;margin-bottom:3px;opacity:.8"></div><div style="height:4px;background:#e5e7eb;border-radius:2px;width:45%;margin-bottom:8px"></div><div style="height:2px;background:'+a+';border-radius:1px;width:38%;margin-bottom:5px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;width:78%;margin-bottom:2px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;width:55%;margin-bottom:7px"></div><div style="height:2px;background:'+a+';border-radius:1px;width:38%;margin-bottom:5px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;width:65%"></div></div>';
+  if(t.l==='T')return'<div style="width:100%;height:100%;background:'+bg+'"><div style="height:5px;background:'+p+'"></div><div style="padding:10px"><div style="height:8px;background:'+p+';border-radius:3px;width:60%;margin:0 auto 4px;opacity:.85"></div><div style="height:3px;background:'+a+';border-radius:2px;width:38%;margin:0 auto 8px"></div><div style="height:1px;background:#e5e7eb;margin-bottom:7px"></div><div style="height:2px;background:'+p+';border-radius:1px;width:38%;margin-bottom:5px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;width:72%;margin-bottom:7px"></div><div style="height:2px;background:'+p+';border-radius:1px;width:38%;margin-bottom:5px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:2.5px;background:#e5e7eb;border-radius:1px;width:60%"></div></div></div>';
+  if(t.l==='S')return'<div style="width:100%;height:100%;background:'+bg+';display:flex;flex-direction:row-reverse"><div style="width:36%;background:'+p+';padding:10px 7px"><div style="width:26px;height:26px;border-radius:50%;background:'+a+';margin:0 auto 6px"></div><div style="height:3px;background:'+a+';border-radius:1px;margin-bottom:3px"></div><div style="height:2px;background:rgba(255,255,255,.3);border-radius:1px;margin-bottom:2px"></div><div style="height:2px;background:rgba(255,255,255,.25);border-radius:1px;width:70%;margin-bottom:8px"></div><div style="height:2px;background:rgba(255,255,255,.3);border-radius:1px;width:60%;margin-bottom:2px"></div><div style="height:2px;background:rgba(255,255,255,.2);border-radius:1px"></div></div><div style="flex:1;padding:10px 8px"><div style="height:5px;background:'+p+';border-radius:2px;width:68%;margin-bottom:3px;opacity:.8"></div><div style="height:3px;background:#e5e7eb;border-radius:1px;width:48%;margin-bottom:7px"></div><div style="height:2px;background:'+a+';border-radius:1px;width:48%;margin-bottom:4px"></div><div style="height:2px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:2px;background:#e5e7eb;border-radius:1px;width:78%"></div></div></div>';
+  if(t.l==='K')return'<div style="width:100%;height:100%;background:'+p+';padding:10px;font-family:monospace"><div style="display:flex;gap:4px;margin-bottom:8px"><div style="width:7px;height:7px;border-radius:50%;background:#ff5f57"></div><div style="width:7px;height:7px;border-radius:50%;background:#febc2e"></div><div style="width:7px;height:7px;border-radius:50%;background:#28c840"></div></div><div style="height:6px;background:'+a+';border-radius:2px;width:58%;margin-bottom:4px;opacity:.8"></div><div style="height:3px;background:rgba(255,255,255,.22);border-radius:1px;width:38%;margin-bottom:8px"></div><div style="height:2px;background:'+a+';border-radius:1px;width:33%;opacity:.6;margin-bottom:4px"></div><div style="height:2px;background:rgba(255,255,255,.18);border-radius:1px;margin-bottom:2px"></div><div style="height:2px;background:rgba(255,255,255,.13);border-radius:1px;width:72%;margin-bottom:6px"></div><div style="height:2px;background:'+a+';border-radius:1px;width:33%;opacity:.6;margin-bottom:4px"></div><div style="height:2px;background:rgba(255,255,255,.18);border-radius:1px;margin-bottom:2px"></div><div style="height:2px;background:rgba(255,255,255,.13);border-radius:1px;width:58%"></div></div>';
+  return'<div style="width:100%;height:100%;background:'+bg+';padding:12px 10px"><div style="height:10px;background:'+p+';border-radius:2px;width:62%;margin-bottom:3px"></div><div style="height:2px;background:'+a+';border-radius:1px;width:28%;margin-bottom:10px"></div><div style="height:1px;background:#e5e7eb;margin-bottom:6px"></div><div style="height:2px;background:'+p+';border-radius:1px;width:38%;opacity:.4;margin-bottom:4px"></div><div style="height:2px;background:#e5e7eb;border-radius:1px;margin-bottom:2px"></div><div style="height:2px;background:#e5e7eb;border-radius:1px;width:78%;margin-bottom:2px"></div><div style="height:2px;background:#e5e7eb;border-radius:1px;width:52%"></div></div>';
+}
+
+function chooseTpl(id){var tpl=getTpl(id);var isUL=tpl.f||unlocked.indexOf(id)>=0;if(isUL)selTpl(id);else openAd(tpl)}
+function selTpl(id){cv.template=id;autoSave();G('s-per')}
+
+// ── AD SYSTEM ──────────────────────────────
+function openAd(tpl){
+  adPending=tpl.id;adTotal=tpl.t;adSec=tpl.t;
+  var nm=document.getElementById('ad-tpl-name');if(nm)nm.textContent='فتح قالب: '+tpl.n;
+  var btn=document.getElementById('ad-open-btn');if(btn){btn.disabled=true;btn.style.opacity='.4'}
+  var arc=document.getElementById('ad-arc');if(arc)arc.style.strokeDashoffset='0';
+  document.getElementById('ad-num').textContent=tpl.t;
+  openM('ad');clearInterval(adTimer);
+  adTimer=setInterval(function(){
+    adSec--;
+    var num=document.getElementById('ad-num');if(num)num.textContent=adSec;
+    var a=document.getElementById('ad-arc');if(a){var off=213.6*(1-(adSec/adTotal));a.style.strokeDashoffset=off}
+    if(adSec<=0){clearInterval(adTimer);var b=document.getElementById('ad-open-btn');if(b){b.disabled=false;b.style.opacity='1'}toast('يمكنك الآن فتح القالب!')}
+  },1000);
+}
+function completeAd(){if(!adPending)return;if(unlocked.indexOf(adPending)<0)unlocked.push(adPending);autoSave();closeM('ad');clearAdTimer();toast('تم فتح القالب! 🎉');selTpl(adPending);adPending=null}
+function clearAdTimer(){clearInterval(adTimer);adTimer=null;adSec=0}
+
+// ── CV CONTEXT MENU ─────────────────────────
+function openMenu(id){selId=id;var c=cvList.find(function(x){return x.id===id});var nm=document.getElementById('m-menu-nm');if(nm)nm.textContent=c?(c.personal.fullName||'سيرة بدون اسم'):'';openM('menu')}
+function menuView(){closeM('menu');openCV(selId)}
+function menuEdit(){closeM('menu');var f=cvList.find(function(x){return x.id===selId});if(!f)return;cv=JSON.parse(JSON.stringify(f));autoSave();G('s-per')}
+function menuChangeTpl(){closeM('menu');var f=cvList.find(function(x){return x.id===selId});if(!f)return;cv=JSON.parse(JSON.stringify(f));autoSave();G('s-tpl')}
+function menuDup(){closeM('menu');var f=cvList.find(function(x){return x.id===selId});if(!f)return;var cp=JSON.parse(JSON.stringify(f));cp.id=Date.now()+'_'+Math.random().toString(36).slice(2,6);cp.createdAt=cp.updatedAt=new Date().toISOString();cvList.unshift(cp);autoSave();renderHome();if(document.getElementById('s-docs').classList.contains('active'))renderDocs();toast('تم نسخ السيرة ✓')}
+function menuDel(){closeM('menu');confirmDel(selId)}
+function confirmDel(id){openM('del');document.getElementById('del-ok').onclick=function(){cvList=cvList.filter(function(c){return c.id!==id});if(cv.id===id)cv=mkCV();autoSave();closeM('del');renderHome();if(document.getElementById('s-docs').classList.contains('active'))renderDocs();toast('تم الحذف')}}
+
+// ── PERSONAL ───────────────────────────────
+function fillPer(){
+  var p=cv.personal;
+  function sv(id,v){var e=document.getElementById(id);if(e)e.value=v||''}
+  sv('p-name',p.fullName);sv('p-ttl',p.title);sv('p-eml',p.email);sv('p-phn',p.phone);sv('p-adr',p.address);
+  // photo
+  updatePhotoUI(p.photo||'');
+  // Sudan fields
+  fillSudanFields();
+}
+function stepNext(target){
+  var active=document.querySelector('.screen.active');
+  if(active&&active.id==='s-per'){
+    function gv(id){var e=document.getElementById(id);return e?e.value:''}
+    cv.personal.fullName=gv('p-name');cv.personal.title=gv('p-ttl');cv.personal.email=gv('p-eml');cv.personal.phone=gv('p-phn');cv.personal.address=gv('p-adr');
+    collectSudanFields();
+    if(!cv.personal.fullName.trim()){toast('يرجى إدخال الاسم الكامل');var fn=document.getElementById('p-name');if(fn)fn.focus();return}
+    autoSave();
+  }
+  G(target);
+}
+
+// ── LISTS ──────────────────────────────────
+function renderEdu(){var el=document.getElementById('edulist');if(!el)return;if(!cv.education.length){el.innerHTML='';return}el.innerHTML=cv.education.map(function(e,i){return'<div class="card" style="display:flex;align-items:center;gap:9px;justify-content:space-between"><div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0"><div style="width:40px;height:40px;background:var(--scl);border-radius:9px;border:1px solid var(--ov);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:20px">school</span></div><div style="min-width:0"><div style="font-family:\'Cairo\',sans-serif;font-size:14px;font-weight:700;color:var(--p);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(e.degree)+'</div><div style="font-size:12px;color:var(--onv)">'+esc(e.school)+'</div><div style="font-size:11px;color:var(--onv);opacity:.8">'+esc(e.startYear)+(e.endYear?' — '+esc(e.endYear):'')+'</div></div></div><div style="display:flex;gap:2px;flex-shrink:0"><button class="ibtn" onclick="openMod(\'edu\','+i+')"><span class="material-symbols-outlined" style="font-size:18px">edit</span></button><button class="ibtn" onclick="delItem(\'edu\','+i+')"><span class="material-symbols-outlined" style="font-size:18px;color:var(--err)">delete</span></button></div></div>'}).join('')}
+function renderExp(){var el=document.getElementById('explist');if(!el)return;if(!cv.experience.length){el.innerHTML='';return}el.innerHTML=cv.experience.map(function(e,i){return'<div class="card"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px"><div style="flex:1;min-width:0"><div style="font-family:\'Cairo\',sans-serif;font-size:14px;font-weight:700;color:var(--p);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(e.title)+'</div><div style="font-size:13px;color:var(--s);font-weight:600">'+esc(e.company)+'</div></div><div style="display:flex;gap:2px;flex-shrink:0"><button class="ibtn" onclick="openMod(\'exp\','+i+')"><span class="material-symbols-outlined" style="font-size:18px">edit</span></button><button class="ibtn" onclick="delItem(\'exp\','+i+')"><span class="material-symbols-outlined" style="font-size:18px;color:var(--err)">delete</span></button></div></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--onv)"><span class="material-symbols-outlined" style="font-size:13px">calendar_month</span>'+esc(e.startDate)+' — '+esc(e.endDate)+(e.current?'<span style="background:rgba(0,32,69,.07);color:var(--p);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:700;margin-right:5px">الحالي</span>':'')+'</div>'+(e.description?'<p style="font-size:12px;color:var(--onv);margin-top:6px;line-height:1.55;border-right:2px solid var(--ov);padding-right:8px">'+esc(e.description)+'</p>':'')+'</div>'}).join('')}
+function renderCrs(){var el=document.getElementById('crslist');if(!el)return;if(!cv.courses.length){el.innerHTML='';return}el.innerHTML=cv.courses.map(function(c,i){return'<div class="card"><div style="display:flex;justify-content:space-between;align-items:flex-start"><div style="flex:1;min-width:0"><div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:16px;flex-shrink:0">verified</span><div style="font-family:\'Cairo\',sans-serif;font-size:14px;font-weight:700;color:var(--p);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(c.name)+'</div></div>'+(c.provider?'<div style="font-size:12px;color:var(--onv);margin-bottom:5px;padding-right:22px">'+esc(c.provider)+'</div>':'')+'<div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-right:22px">'+(c.date?'<span style="background:var(--sch);padding:2px 9px;border-radius:11px;font-size:11px;color:var(--onv)">'+esc(c.date)+'</span>':'')+(c.certUrl?'<a href="'+esc(c.certUrl)+'" target="_blank" style="font-size:11px;color:var(--s);display:flex;align-items:center;gap:2px;text-decoration:none"><span class="material-symbols-outlined" style="font-size:12px">link</span>شهادة</a>':'')+'</div></div><div style="display:flex;flex-direction:column;gap:2px"><button class="ibtn" onclick="openMod(\'crs\','+i+')"><span class="material-symbols-outlined" style="font-size:18px">edit</span></button><button class="ibtn" onclick="delItem(\'crs\','+i+')"><span class="material-symbols-outlined" style="font-size:18px;color:var(--err)">delete</span></button></div></div></div>'}).join('')}
+
+// ── SUMMARY & SKILLS ───────────────────────
+function renderSum(){var s=document.getElementById('s-sm');if(s)s.value=cv.summary||'';renderChips()}
+function renderChips(){var el=document.getElementById('sk-chips'),cnt=document.getElementById('sk-cnt');if(!el)return;if(cnt)cnt.textContent=cv.skills.length?cv.skills.length+' مهارة':'';if(!cv.skills.length){el.innerHTML='<span style="font-size:12px;color:var(--onv);font-style:italic">أضف مهاراتك لإبراز قدراتك!</span>';return}el.innerHTML=cv.skills.map(function(s,i){return'<div class="chip"><span>'+esc(s)+'</span><button onclick="rmSkill('+i+')" type="button">close</button></div>'}).join('')}
+function addSkill(){var inp=document.getElementById('sk-inp');var v=(inp?inp.value.trim():'');if(!v)return;if(cv.skills.indexOf(v)>=0){toast('هذه المهارة موجودة');return}cv.skills.push(v);if(inp)inp.value='';autoSave();renderChips()}
+function rmSkill(i){cv.skills.splice(i,1);autoSave();renderChips()}
+function finishCV(){var sm=document.getElementById('s-sm');if(sm)cv.summary=sm.value;var si=document.getElementById('sk-inp');if(si&&si.value.trim())addSkill();autoSave();var idx=cvList.findIndex(function(c){return c.id===cv.id});var copy=JSON.parse(JSON.stringify(cv));if(idx>=0)cvList[idx]=copy;else cvList.unshift(copy);autoSave();onCVSaved();toast('تم الحفظ بنجاح ✓');G('s-prv')}
+function editCV(){G('s-per')}
+
+// ── MODALS ─────────────────────────────────
+function openM(t){var m=document.getElementById('m-'+t);if(m)m.classList.add('open')}
+function closeM(t){var m=document.getElementById('m-'+t);if(m)m.classList.remove('open')}
+function openMod(type,idx){
+  editI={t:type,i:idx!==undefined?idx:-1};
+  if(type==='edu'){var tl=document.getElementById('m-edu-t');if(tl)tl.textContent=idx>=0?'تعديل المؤهل':'إضافة مؤهل';var it=idx>=0?cv.education[idx]:{};document.getElementById('e-deg').value=it.degree||'';document.getElementById('e-sch').value=it.school||'';document.getElementById('e-sy').value=it.startYear||'';document.getElementById('e-ey').value=it.endYear||''}
+  if(type==='exp'){var tl=document.getElementById('m-exp-t');if(tl)tl.textContent=idx>=0?'تعديل الخبرة':'إضافة خبرة';var it=idx>=0?cv.experience[idx]:{};document.getElementById('x-ttl').value=it.title||'';document.getElementById('x-co').value=it.company||'';document.getElementById('x-sd').value=it.startDate||'';document.getElementById('x-ed').value=it.endDate||'';var cur=document.getElementById('x-cur');cur.checked=!!it.current;document.getElementById('x-ed').disabled=!!it.current;document.getElementById('x-dsc').value=it.description||''}
+  if(type==='crs'){var tl=document.getElementById('m-crs-t');if(tl)tl.textContent=idx>=0?'تعديل الدورة':'إضافة دورة';var it=idx>=0?cv.courses[idx]:{};document.getElementById('c-nm').value=it.name||'';document.getElementById('c-pr').value=it.provider||'';document.getElementById('c-dt').value=it.date||'';document.getElementById('c-url').value=it.certUrl||''}
+  openM(type);setTimeout(function(){var fi=document.getElementById('m-'+type).querySelector('input:not([type=checkbox])');if(fi)fi.focus()},120);
+}
+function saveEdu(){var deg=document.getElementById('e-deg').value.trim();var sch=document.getElementById('e-sch').value.trim();if(!deg){toast('يرجى إدخال الدرجة');return}if(!sch){toast('يرجى إدخال المؤسسة');return}var item={degree:deg,school:sch,startYear:document.getElementById('e-sy').value.trim(),endYear:document.getElementById('e-ey').value.trim()};if(editI.i>=0)cv.education[editI.i]=item;else cv.education.push(item);autoSave();closeM('edu');renderEdu();toast(editI.i>=0?'تم التعديل ✓':'تمت الإضافة ✓')}
+function saveExp(){var ttl=document.getElementById('x-ttl').value.trim();var co=document.getElementById('x-co').value.trim();if(!ttl){toast('يرجى إدخال المسمى');return}if(!co){toast('يرجى إدخال الشركة');return}var cur=document.getElementById('x-cur').checked;var item={title:ttl,company:co,startDate:document.getElementById('x-sd').value.trim(),endDate:cur?'الحالي':document.getElementById('x-ed').value.trim(),current:cur,description:document.getElementById('x-dsc').value.trim()};if(editI.i>=0)cv.experience[editI.i]=item;else cv.experience.push(item);autoSave();closeM('exp');renderExp();toast(editI.i>=0?'تم التعديل ✓':'تمت الإضافة ✓')}
+function saveCrs(){var nm=document.getElementById('c-nm').value.trim();if(!nm){toast('يرجى إدخال اسم الدورة');return}var item={name:nm,provider:document.getElementById('c-pr').value.trim(),date:document.getElementById('c-dt').value.trim(),certUrl:document.getElementById('c-url').value.trim()};if(editI.i>=0)cv.courses[editI.i]=item;else cv.courses.push(item);autoSave();closeM('crs');renderCrs();toast(editI.i>=0?'تم التعديل ✓':'تمت الإضافة ✓')}
+function delItem(type,i){openM('del');document.getElementById('del-ok').onclick=function(){if(type==='edu')cv.education.splice(i,1);if(type==='exp')cv.experience.splice(i,1);if(type==='crs')cv.courses.splice(i,1);autoSave();closeM('del');if(type==='edu')renderEdu();if(type==='exp')renderExp();if(type==='crs')renderCrs();toast('تم الحذف')}}
+
+// ── CV BUILDER — 5 LAYOUTS ─────────────────
+function renderPrv(){var a=document.getElementById('cv-prv');if(a)a.innerHTML=buildCV(cv,false)}
+function buildCV(data,fp){var tpl=getTpl(data.template);if(tpl.l==='K')return bTech(data,tpl,fp);if(tpl.l==='S')return bSide(data,tpl,fp);if(tpl.l==='T')return bTop(data,tpl,fp);if(tpl.l==='M')return bMin(data,tpl,fp);if(tpl.l==='C')return bClean(data,tpl,fp);return bHeader(data,tpl,fp)}
+
+function sec(title,html,a,fp){if(!html)return'';return'<div style="margin-bottom:'+(fp?'10px':'14px')+'"><h2 style="font-family:\'Cairo\',sans-serif;font-size:'+(fp?'12px':'13px')+';font-weight:700;border-right:3px solid '+a+';padding-right:8px;margin:0 0 7px">'+esc(title)+'</h2>'+html+'</div>'}
+function eH(data,fp){return data.experience.map(function(e){return'<div style="padding-right:11px;border-right:2px solid rgba(0,0,0,.1);margin-bottom:7px;position:relative"><span style="position:absolute;right:-4px;top:4px;width:6px;height:6px;border-radius:50%;display:inline-block;background:currentColor;opacity:.4"></span><div style="font-weight:700;font-family:\'Cairo\',sans-serif;font-size:'+(fp?'11px':'12px')+'">'+esc(e.title)+'</div><div style="font-size:'+(fp?'10px':'11px')+';opacity:.65;font-weight:600">'+esc(e.company)+'</div><div style="font-size:'+(fp?'9px':'10px')+';opacity:.45;margin-top:1px">'+esc(e.startDate)+' — '+esc(e.endDate)+'</div>'+(e.description?'<p style="font-size:'+(fp?'9px':'10px')+';opacity:.6;margin-top:2px;line-height:1.5">'+esc(e.description)+'</p>':'')+'</div>'}).join('')}
+function edH(data,fp){return data.education.map(function(e){return'<div style="background:rgba(0,0,0,.04);border-radius:6px;padding:6px 9px;margin-bottom:5px"><div style="font-weight:700;font-family:\'Cairo\',sans-serif;font-size:'+(fp?'11px':'12px')+'">'+esc(e.degree)+'</div><div style="font-size:'+(fp?'9px':'10px')+';opacity:.6">'+esc(e.school)+(e.endYear?' | '+esc(e.endYear):'')+'</div></div>'}).join('')}
+function crH(data,fp){return data.courses.map(function(c){return'<div style="display:flex;gap:5px;margin-bottom:5px;align-items:flex-start"><span style="font-size:12px;flex-shrink:0;opacity:.6">✓</span><div><div style="font-weight:700;font-size:'+(fp?'10px':'11px')+'">'+esc(c.name)+'</div><div style="font-size:'+(fp?'9px':'10px')+';opacity:.55">'+esc(c.provider)+(c.date?' • '+esc(c.date):'')+'</div></div></div>'}).join('')}
+function skH(data,fp,bg,col){return data.skills.length?'<div style="display:flex;flex-wrap:wrap;gap:4px">'+data.skills.map(function(s){return'<span style="background:'+bg+';color:'+col+';padding:2px 8px;border-radius:5px;font-size:'+(fp?'9px':'10px')+';font-weight:600">'+esc(s)+'</span>'}).join('')+'</div>':''}
+
+function bHeader(data,tpl,fp){var p=data.personal,pc=tpl.p,ac=tpl.a;var h=fp?'17px':'21px',b=fp?'11px':'12px',sm=fp?'10px':'11px';
+var photoHtml=p.photo?'<img src="'+p.photo+'" style="width:'+(fp?'50px':'60px')+';height:'+(fp?'50px':'60px')+';border-radius:50%;object-fit:cover;border:3px solid '+ac+';margin-bottom:8px" alt=""/>':'';
+var sudanHtml='';
+if(p.gender||p.dob||p.nationality||p.religion||p.nationalId||p.marital){
+  sudanHtml='<div style="margin-bottom:'+(fp?'8px':'12px')+'"><h2 style="font-family:\'Cairo\',sans-serif;font-size:'+(fp?'11px':'13px')+';font-weight:700;border-right:3px solid '+ac+';padding-right:8px;margin:0 0 6px">البيانات الشخصية</h2>'
+    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;font-size:'+(fp?'9px':'10px')+';opacity:.75">'
+    +(p.gender?'<div><b>الجنس:</b> '+esc(p.gender)+'</div>':'')
+    +(p.marital?'<div><b>الحالة:</b> '+esc(p.marital)+'</div>':'')
+    +(p.dob?'<div><b>الميلاد:</b> '+esc(p.dob)+'</div>':'')
+    +(p.pob?'<div><b>مكان الميلاد:</b> '+esc(p.pob)+'</div>':'')
+    +(p.nationality?'<div><b>الجنسية:</b> '+esc(p.nationality)+'</div>':'')
+    +(p.religion?'<div><b>الديانة:</b> '+esc(p.religion)+'</div>':'')
+    +(p.nationalId?'<div style="grid-column:1/-1"><b>الرقم الوطني:</b> '+esc(p.nationalId)+'</div>':'')
+    +'</div></div>';
+}
+return'<div style="font-family:\'Tajawal\',sans-serif;direction:rtl;text-align:right;color:'+pc+'">'
++'<div style="background:'+pc+';padding:20px 18px;color:white;text-align:center">'+photoHtml+'<div style="width:40px;height:3px;background:'+ac+';border-radius:2px;margin:0 auto 11px"></div>'
++'<h1 style="font-family:\'Cairo\',sans-serif;font-size:'+h+';font-weight:800;margin:0 0 3px">'+esc(p.fullName||'الاسم الكامل')+'</h1>'
++(p.title?'<div style="font-size:'+sm+';opacity:.82;margin-bottom:8px">'+esc(p.title)+'</div>':'<div style="height:6px"></div>')
++'<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:'+(fp?'9px':'10px')+';opacity:.85">'
++(p.email?'<span>✉ '+esc(p.email)+'</span>':'')+(p.phone?'<span>📞 '+esc(p.phone)+'</span>':'')+(p.address?'<span>📍 '+esc(p.address)+'</span>':'')
++'</div></div>'
++'<div style="padding:'+(fp?'12px':'15px')+';">'
++sudanHtml
++(data.summary?sec('الملخص المهني','<p style="font-size:'+b+';opacity:.7;line-height:1.65">'+esc(data.summary)+'</p>',ac,fp):'')
++sec('الخبرة العملية',eH(data,fp),ac,fp)+sec('التعليم',edH(data,fp),ac,fp)+sec('الدورات',crH(data,fp),ac,fp)+sec('المهارات',skH(data,fp,'rgba(0,0,0,.07)',pc),ac,fp)
++'</div></div>'}
+
+function bClean(data,tpl,fp){var p=data.personal,pc=tpl.p,ac=tpl.a,bg=tpl.bg||'#fff';var h=fp?'17px':'21px',b=fp?'11px':'12px',sm=fp?'10px':'11px';
+var photoHtml=p.photo?'<img src="'+p.photo+'" style="width:'+(fp?'44px':'54px')+';height:'+(fp?'44px':'54px')+';border-radius:50%;object-fit:cover;border:2px solid '+pc+';float:left;margin-right:14px" alt=""/>':'';
+var sudanHtml='';if(p.gender||p.dob||p.nationality||p.nationalId||p.marital){sudanHtml=sec('البيانات الشخصية','<div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;font-size:'+(fp?'9px':'10px')+';opacity:.7">'+(p.gender?'<div><b>الجنس:</b> '+esc(p.gender)+'</div>':'')+(p.marital?'<div><b>الحالة:</b> '+esc(p.marital)+'</div>':'')+(p.dob?'<div><b>الميلاد:</b> '+esc(p.dob)+'</div>':'')+(p.nationality?'<div><b>الجنسية:</b> '+esc(p.nationality)+'</div>':'')+(p.religion?'<div><b>الديانة:</b> '+esc(p.religion)+'</div>':'')+(p.nationalId?'<div style="grid-column:1/-1"><b>الرقم الوطني:</b> '+esc(p.nationalId)+'</div>':'')+'</div>',ac,fp)}
+return'<div style="font-family:\'Tajawal\',sans-serif;direction:rtl;text-align:right;background:'+bg+';color:'+pc+'">'
++'<div style="padding:18px 18px 12px;border-bottom:2px solid '+pc+'">'
++photoHtml
++'<h1 style="font-family:\'Cairo\',sans-serif;font-size:'+h+';font-weight:800;margin:0 0 2px">'+esc(p.fullName||'الاسم الكامل')+'</h1>'
++(p.title?'<div style="font-size:'+sm+';color:'+ac+';font-weight:700;margin-bottom:6px">'+esc(p.title)+'</div>':'')
++'<div style="display:flex;flex-wrap:wrap;gap:8px;font-size:'+(fp?'9px':'10px')+';opacity:.55;clear:both">'
++(p.email?'<span>'+esc(p.email)+'</span>':'')+(p.phone?'<span>'+esc(p.phone)+'</span>':'')+(p.address?'<span>'+esc(p.address)+'</span>':'')+'</div></div>'
++'<div style="padding:'+(fp?'12px':'14px')+';">'
++sudanHtml
++(data.summary?sec('الملخص','<p style="font-size:'+b+';opacity:.65;line-height:1.65">'+esc(data.summary)+'</p>',ac,fp):'')
++sec('الخبرة',eH(data,fp),ac,fp)+sec('التعليم',edH(data,fp),ac,fp)+sec('الدورات',crH(data,fp),ac,fp)+sec('المهارات',skH(data,fp,ac+'22',pc),ac,fp)
++'</div></div>'}
+
+function bTop(data,tpl,fp){var p=data.personal,pc=tpl.p,ac=tpl.a,bg=tpl.bg||'#fff';var h=fp?'16px':'20px',b=fp?'11px':'12px',sm=fp?'10px':'11px';
+var photoHtml=p.photo?'<img src="'+p.photo+'" style="width:'+(fp?'44px':'54px')+';height:'+(fp?'44px':'54px')+';border-radius:50%;object-fit:cover;border:2px solid '+ac+';margin-bottom:8px" alt=""/>':'';
+var sudanHtml='';if(p.gender||p.dob||p.nationality||p.nationalId){sudanHtml=sec('البيانات الشخصية','<div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;font-size:'+(fp?'9px':'10px')+';opacity:.7">'+(p.gender?'<div><b>الجنس:</b> '+esc(p.gender)+'</div>':'')+(p.marital?'<div><b>الحالة:</b> '+esc(p.marital)+'</div>':'')+(p.dob?'<div><b>الميلاد:</b> '+esc(p.dob)+'</div>':'')+(p.nationality?'<div><b>الجنسية:</b> '+esc(p.nationality)+'</div>':'')+(p.nationalId?'<div style="grid-column:1/-1"><b>الرقم الوطني:</b> '+esc(p.nationalId)+'</div>':'')+'</div>',ac,fp)}
+return'<div style="font-family:\'Tajawal\',sans-serif;direction:rtl;text-align:right;background:'+bg+'">'
++'<div style="height:6px;background:'+pc+'"></div>'
++'<div style="padding:14px 16px 10px;text-align:center;border-bottom:1px solid rgba(0,0,0,.07)">'
++photoHtml
++'<h1 style="font-family:\'Cairo\',sans-serif;font-size:'+h+';font-weight:800;margin:0 0 2px;color:'+pc+'">'+esc(p.fullName||'الاسم الكامل')+'</h1>'
++'<div style="font-size:'+sm+';color:'+ac+';font-weight:700;margin-bottom:5px">'+esc(p.title||'')+'</div>'
++'<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:'+(fp?'9px':'10px')+';color:'+pc+';opacity:.55">'
++(p.email?'<span>'+esc(p.email)+'</span>':'')+(p.phone?'<span>'+esc(p.phone)+'</span>':'')+(p.address?'<span>'+esc(p.address)+'</span>':'')+'</div></div>'
++'<div style="padding:'+(fp?'11px':'14px')+';color:'+pc+';">'
++sudanHtml
++(data.summary?sec('الملخص','<p style="font-size:'+b+';opacity:.65;line-height:1.65">'+esc(data.summary)+'</p>',ac,fp):'')
++sec('الخبرة',eH(data,fp),ac,fp)+sec('التعليم',edH(data,fp),ac,fp)+sec('الدورات',crH(data,fp),ac,fp)+sec('المهارات',skH(data,fp,ac+'33',pc),ac,fp)
++'</div></div>'}
+
+function bSide(data,tpl,fp){var p=data.personal,pc=tpl.p,ac=tpl.a,bg=tpl.bg||'#fff';var h=fp?'13px':'16px',b=fp?'10px':'11px',sm=fp?'9px':'10px';
+var photoEl=p.photo?'<img src="'+p.photo+'" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid '+ac+';margin:0 auto 8px;display:block" alt=""/>'
+:'<div style="width:36px;height:36px;border-radius:50%;background:'+ac+';margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:'+pc+'">'+esc((p.fullName||'؟').charAt(0))+'</div>';
+var sSkl=data.skills.map(function(s){return'<div style="font-size:'+sm+';color:white;opacity:.82;margin-bottom:3px;padding:2px 6px;background:rgba(255,255,255,.14);border-radius:4px">'+esc(s)+'</div>'}).join('');
+var sEdu=data.education.map(function(e){return'<div style="margin-bottom:5px"><div style="font-size:'+sm+';font-weight:700;color:white">'+esc(e.degree)+'</div><div style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.55)">'+esc(e.school)+'</div></div>'}).join('');
+var sSudan='';if(p.gender||p.dob||p.nationalId){sSudan='<div style="font-size:'+sm+';font-weight:700;color:'+ac+';margin:8px 0 5px">بيانات شخصية</div>'+(p.gender?'<div style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.7)">الجنس: '+esc(p.gender)+'</div>':'')+(p.dob?'<div style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.7)">الميلاد: '+esc(p.dob)+'</div>':'')+(p.nationality?'<div style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.7)">الجنسية: '+esc(p.nationality)+'</div>':'')+(p.nationalId?'<div style="font-size:'+(fp?'7px':'8px')+';color:rgba(255,255,255,.5)">الرقم الوطني</div>':'');}
+return'<div style="font-family:\'Tajawal\',sans-serif;direction:rtl;text-align:right;display:flex;flex-direction:row-reverse;min-height:300px;background:'+bg+'">'
++'<div style="width:37%;background:'+pc+';padding:14px 10px">'
++photoEl
++'<div style="font-family:\'Cairo\',sans-serif;font-size:'+h+';font-weight:800;color:white;text-align:center;margin-bottom:2px;line-height:1.2">'+esc(p.fullName||'الاسم')+'</div>'
++'<div style="font-size:'+sm+';color:'+ac+';text-align:center;margin-bottom:8px;font-weight:600">'+esc(p.title||'')+'</div>'
++'<div style="height:1px;background:rgba(255,255,255,.13);margin-bottom:8px"></div>'
++(p.email?'<div style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.65);margin-bottom:3px;word-break:break-all">'+esc(p.email)+'</div>':'')
++(p.phone?'<div style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.65);margin-bottom:3px">'+esc(p.phone)+'</div>':'')
++sSudan
++(data.skills.length?'<div style="font-size:'+sm+';font-weight:700;color:'+ac+';margin:8px 0 5px">المهارات</div>'+sSkl:'')
++(data.education.length?'<div style="font-size:'+sm+';font-weight:700;color:'+ac+';margin:8px 0 5px">التعليم</div>'+sEdu:'')
++'</div>'
++'<div style="flex:1;padding:'+(fp?'12px':'14px')+';color:'+pc+';">'
++(data.summary?sec('الملخص','<p style="font-size:'+b+';opacity:.65;line-height:1.65">'+esc(data.summary)+'</p>',ac,fp):'')
++sec('الخبرة',eH(data,fp),ac,fp)+sec('الدورات',crH(data,fp),ac,fp)+'</div></div>'}
+
+function bTech(data,tpl,fp){var p=data.personal,pc=tpl.p,ac=tpl.a;var h=fp?'15px':'18px',b=fp?'10px':'11px',sm=fp?'9px':'10px';
+return'<div style="font-family:monospace,\'Tajawal\',sans-serif;direction:rtl;text-align:right;background:'+pc+';color:'+ac+'">'
++'<div style="padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.08)">'
++'<div style="display:flex;gap:5px;margin-bottom:10px"><div style="width:8px;height:8px;border-radius:50%;background:#ff5f57"></div><div style="width:8px;height:8px;border-radius:50%;background:#febc2e"></div><div style="width:8px;height:8px;border-radius:50%;background:#28c840"></div></div>'
++'<div style="font-size:'+(fp?'9px':'10px')+';color:rgba(255,255,255,.35);margin-bottom:4px">$ cat profile.json</div>'
++'<h1 style="font-size:'+h+';font-weight:700;margin:0 0 2px;color:'+ac+'">'+esc(p.fullName||'الاسم')+'</h1>'
++'<div style="font-size:'+sm+';color:rgba(255,255,255,.55);margin-bottom:6px">'+esc(p.title||'')+'</div>'
++'<div style="display:flex;flex-wrap:wrap;gap:6px;font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.4)">'
++(p.email?'<span>'+esc(p.email)+'</span>':'')+(p.phone?'<span>'+esc(p.phone)+'</span>':'')+'</div></div>'
++'<div style="padding:'+(fp?'11px':'14px')+';">'
++(data.summary?'<div style="margin-bottom:10px"><div style="font-size:'+sm+';color:rgba(255,255,255,.35);margin-bottom:4px">/* summary */</div><p style="font-size:'+b+';color:rgba(255,255,255,.65);line-height:1.65">'+esc(data.summary)+'</p></div>':'')
++(data.experience.length?'<div style="margin-bottom:10px"><div style="font-size:'+sm+';color:'+ac+';margin-bottom:6px;font-weight:700">▶ الخبرة</div>'
++data.experience.map(function(e){return'<div style="border-right:2px solid '+ac+'44;padding-right:8px;margin-bottom:7px"><div style="font-weight:700;font-size:'+b+';color:white">'+esc(e.title)+'</div><div style="font-size:'+sm+';color:'+ac+';opacity:.8">'+esc(e.company)+'</div><div style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.35)">'+esc(e.startDate)+' — '+esc(e.endDate)+'</div>'+(e.description?'<p style="font-size:'+(fp?'8px':'9px')+';color:rgba(255,255,255,.5);margin-top:2px;line-height:1.5">'+esc(e.description)+'</p>':'')+'</div>'}).join('')+'</div>':'')
++(data.education.length?'<div style="margin-bottom:10px"><div style="font-size:'+sm+';color:'+ac+';margin-bottom:6px;font-weight:700">▶ التعليم</div>'+data.education.map(function(e){return'<div style="margin-bottom:5px"><div style="font-weight:700;font-size:'+b+';color:white">'+esc(e.degree)+'</div><div style="font-size:'+sm+';color:rgba(255,255,255,.45)">'+esc(e.school)+(e.endYear?' | '+esc(e.endYear):'')+'</div></div>'}).join('')+'</div>':'')
++(data.skills.length?'<div><div style="font-size:'+sm+';color:'+ac+';margin-bottom:6px;font-weight:700">▶ المهارات</div><div style="display:flex;flex-wrap:wrap;gap:4px">'+data.skills.map(function(s){return'<span style="background:'+ac+'1a;color:'+ac+';padding:2px 8px;border-radius:4px;font-size:'+(fp?'8px':'9px')+';border:1px solid '+ac+'44">'+esc(s)+'</span>'}).join('')+'</div></div>':'')
++'</div></div>'}
+
+function bMin(data,tpl,fp){var p=data.personal,pc=tpl.p,ac=tpl.a,bg=tpl.bg||'#fff';var h=fp?'18px':'22px',b=fp?'11px':'12px',sm=fp?'10px':'11px';
+return'<div style="font-family:\'Tajawal\',sans-serif;direction:rtl;text-align:right;background:'+bg+';color:'+pc+';padding:'+(fp?'14px':'18px')+';">'
++'<h1 style="font-family:\'Cairo\',sans-serif;font-size:'+h+';font-weight:800;margin:0 0 2px">'+esc(p.fullName||'الاسم الكامل')+'</h1>'
++'<div style="font-size:'+sm+';color:'+ac+';font-weight:700;margin-bottom:4px">'+esc(p.title||'')+'</div>'
++'<div style="font-size:'+(fp?'9px':'10px')+';opacity:.45;margin-bottom:12px">'+(p.email?esc(p.email)+'   ':'')+(p.phone?esc(p.phone)+'   ':'')+esc(p.address||'')+'</div>'
++(data.summary?'<p style="font-size:'+b+';opacity:.6;line-height:1.7;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,.08)">'+esc(data.summary)+'</p>':'')
++[{t:'الخبرة العملية',h:eH(data,fp)},{t:'التعليم',h:edH(data,fp)},{t:'الدورات',h:crH(data,fp)},{t:'المهارات',h:skH(data,fp,'rgba(0,0,0,.07)',pc)}].map(function(s){return s.h?'<div style="margin-bottom:10px"><div style="font-size:'+sm+';font-weight:700;opacity:.35;margin-bottom:6px;letter-spacing:.06em">'+s.t+'</div>'+s.h+'</div>':''}).join('')
++'</div>'}
+
+// ── PRINT ──────────────────────────────────
+function printCV(){var wrap=document.getElementById('cvprint');if(!wrap)return;wrap.innerHTML='<div style="padding:18px;max-width:800px;margin:0 auto">'+buildCV(cv,true)+'</div>';document.fonts.ready.then(function(){setTimeout(function(){window.print()},320);setTimeout(function(){wrap.innerHTML=''},4500)})}
+
+// ── SETTINGS ───────────────────────────────
+function renderSet(){
+  var l=(userName||'م').charAt(0),av=document.getElementById('set-av'),nm=document.getElementById('set-nm'),inp=document.getElementById('set-inp'),st=document.getElementById('set-stats'),ul=document.getElementById('set-unlocked');
+  if(av)av.textContent=l;if(nm)nm.textContent=userName||'مستخدم';if(inp)inp.value=userName||'';
+  if(st){var items=[{icon:'description',val:cvList.length,lbl:'سيرة'},{icon:'school',val:cv.education.length,lbl:'مؤهل'},{icon:'work',val:cv.experience.length,lbl:'خبرة'}];st.innerHTML=items.map(function(x){return'<div style="background:var(--scl);border-radius:10px;padding:10px;text-align:center;border:1px solid var(--ov)"><span class="material-symbols-outlined fi" style="color:var(--p);font-size:22px;display:block;margin-bottom:3px">'+x.icon+'</span><div style="font-family:\'Cairo\',sans-serif;font-size:18px;font-weight:700;color:var(--p)">'+x.val+'</div><div style="font-size:11px;color:var(--onv)">'+x.lbl+'</div></div>'}).join('')}
+  if(ul){var cnt=unlocked.length;ul.innerHTML=cnt?'<div style="font-size:13px;color:var(--onv);margin-bottom:8px">فتحت <strong style="color:var(--p)">'+cnt+'</strong> قالباً مدفوعاً</div><div style="display:flex;flex-wrap:wrap;gap:6px">'+unlocked.map(function(id){var t=getTpl(id);return'<span style="background:var(--sc);color:var(--osc);padding:2px 9px;border-radius:10px;font-size:11px;font-weight:700">'+t.n+'</span>'}).join('')+'</div>':'<div style="font-size:13px;color:var(--onv)">لم تفتح أي قالب مدفوع بعد. شاهد الإعلانات للحصول على المزيد!</div>'}
+  // Restore notification settings
+  loadNotifUI();
+}
+function updateName(){var inp=document.getElementById('set-inp');var v=(inp?inp.value:'').trim();if(!v){toast('يرجى إدخال اسم');return}userName=v;autoSave();renderSet();renderHome();toast('تم تحديث الاسم ✓')}
+function clearAll(){openM('del');document.getElementById('del-ok').onclick=function(){['sira_cv','sira_cl','sira_u','sira_ul'].forEach(function(k){localStorage.removeItem(k)});cv=mkCV();cvList=[];userName='';unlocked=[];autoSave();closeM('del');G('s-landing',true);var li=document.getElementById('l-name');if(li)li.value='';toast('تم مسح جميع البيانات')}}
+
+// ══════════════════════════════════════════
+//  PHOTO
+// ══════════════════════════════════════════
+function handlePhoto(input){
+  if(!input.files||!input.files[0])return;
+  var file=input.files[0];
+  if(file.size>3*1024*1024){toast('الصورة كبيرة — اختر أقل من 3MB');return}
+  var reader=new FileReader();
+  reader.onload=function(e){
+    cv.personal.photo=e.target.result;autoSave();
+    updatePhotoUI(e.target.result);
+  };
+  reader.readAsDataURL(file);
+}
+function updatePhotoUI(src){
+  var img=document.getElementById('photo-img'),icon=document.getElementById('photo-icon'),del=document.getElementById('photo-del');
+  if(!img)return;
+  if(src){img.src=src;img.style.display='block';if(icon)icon.style.display='none';if(del)del.style.display='block'}
+  else{img.style.display='none';if(icon)icon.style.display='';if(del)del.style.display='none'}
+}
+function removePhoto(){cv.personal.photo='';autoSave();updatePhotoUI('');var inp=document.getElementById('photo-input');if(inp)inp.value=''}
+
+// ══════════════════════════════════════════
+//  SUDAN FIELDS
+// ══════════════════════════════════════════
+function toggleSudan(btn){
+  var f=document.getElementById('sudan-fields'),ic=document.getElementById('sudan-icon');
+  if(!f)return;
+  var open=f.style.display!=='none';
+  f.style.display=open?'none':'block';
+  if(ic)ic.textContent=open?'expand_more':'expand_less';
+}
+function fillSudanFields(){
+  var p=cv.personal;
+  function sv(id,v){var e=document.getElementById(id);if(e)e.value=v||''}
+  sv('p-gender',p.gender);sv('p-marital',p.marital);sv('p-dob',p.dob);
+  sv('p-pob',p.pob);sv('p-nat',p.nationality);sv('p-rel',p.religion);sv('p-nid',p.nationalId);
+}
+function collectSudanFields(){
+  function gv(id){var e=document.getElementById(id);return e?e.value:''}
+  cv.personal.gender=gv('p-gender');cv.personal.marital=gv('p-marital');
+  cv.personal.dob=gv('p-dob');cv.personal.pob=gv('p-pob');
+  cv.personal.nationality=gv('p-nat');cv.personal.religion=gv('p-rel');
+  cv.personal.nationalId=gv('p-nid');
+}
+
+// ══════════════════════════════════════════
+//  CERTIFICATES
+// ══════════════════════════════════════════
+var certType='work';
+var CERT_LABELS={
+  work:'شهادة خبرة عمل',
+  training:'شهادة دورة تدريبية',
+  appreciation:'شهادة تقدير',
+  attendance:'شهادة حضور وتقدير',
+  other:'شهادة'
+};
+function setCertType(el,t){
+  certType=t;
+  document.querySelectorAll('[data-ct]').forEach(function(b){b.classList.remove('on')});
+  el.classList.add('on');
+}
+function newCert(){
+  certType='work';
+  document.querySelectorAll('[data-ct]').forEach(function(b){b.classList.remove('on')});
+  var first=document.querySelector('[data-ct]');if(first)first.classList.add('on');
+  ['c-recip','c-org','c-subj','c-date','c-num','c-detail','c-city'].forEach(function(id){var e=document.getElementById(id);if(e)e.value=''});
+  var prv=document.getElementById('cert-preview');
+  if(prv)prv.innerHTML='<div style="text-align:center;padding:30px;color:var(--onv);font-size:13px">اضغط "تحديث" لمعاينة الشهادة</div>';
+}
+function getCertData(){
+  function gv(id){var e=document.getElementById(id);return e?e.value.trim():''}
+  return{
+    type:certType,label:CERT_LABELS[certType]||'شهادة',
+    recipient:gv('c-recip'),org:gv('c-org'),subject:gv('c-subj'),
+    date:gv('c-date'),number:gv('c-num'),detail:gv('c-detail'),city:gv('c-city')
+  };
+}
+function refreshCert(){
+  var d=getCertData();
+  if(!d.recipient||!d.org||!d.subject){toast('يرجى إدخال اسم المستفيد والجهة والموضوع');return}
+  var prv=document.getElementById('cert-preview');
+  if(prv)prv.innerHTML=buildCertHtml(d);
+}
+function buildCertHtml(d){
+  var border='#b8860b',gold='#c9a96e',navy='#002045';
+  return'<div style="direction:rtl;text-align:center;font-family:\'Cairo\',sans-serif;padding:30px 28px;background:#fffef7;position:relative;min-height:340px">'
+    // outer border
+    +'<div style="position:absolute;inset:10px;border:3px solid '+border+';pointer-events:none;border-radius:4px"></div>'
+    +'<div style="position:absolute;inset:15px;border:1px solid '+gold+'66;pointer-events:none;border-radius:2px"></div>'
+    // corner ornaments
+    +'<div style="position:absolute;top:18px;right:18px;width:20px;height:20px;border-top:3px solid '+border+';border-right:3px solid '+border+'"></div>'
+    +'<div style="position:absolute;top:18px;left:18px;width:20px;height:20px;border-top:3px solid '+border+';border-left:3px solid '+border+'"></div>'
+    +'<div style="position:absolute;bottom:18px;right:18px;width:20px;height:20px;border-bottom:3px solid '+border+';border-right:3px solid '+border+'"></div>'
+    +'<div style="position:absolute;bottom:18px;left:18px;width:20px;height:20px;border-bottom:3px solid '+border+';border-left:3px solid '+border+'"></div>'
+    // content
+    +'<div style="position:relative;z-index:1;padding:10px 0">'
+    // logo area
+    +'<div style="width:52px;height:52px;border-radius:50%;background:'+navy+';display:flex;align-items:center;justify-content:center;margin:0 auto 12px;border:3px solid '+gold+'">'
+    +'<span style="font-family:\'Cairo\',sans-serif;font-size:18px;font-weight:800;color:'+gold+'">س</span></div>'
+    +'<div style="font-size:11px;color:'+navy+';letter-spacing:2px;margin-bottom:14px;opacity:.7">بسم الله الرحمن الرحيم</div>'
+    +'<h1 style="font-size:20px;font-weight:800;color:'+navy+';margin-bottom:4px;letter-spacing:.5px">'+esc(d.label)+'</h1>'
+    +'<div style="width:60px;height:2px;background:'+gold+';border-radius:1px;margin:8px auto 16px"></div>'
+    +'<p style="font-size:14px;color:#333;line-height:1.8;margin-bottom:12px">'
+    +'تشهد <strong style="color:'+navy+'">'+esc(d.org)+'</strong><br>'
+    +'بأن السيد / السيدة: <strong style="font-size:16px;color:'+navy+'">'+esc(d.recipient)+'</strong><br>'
+    +esc(d.subject)
+    +'</p>'
+    +(d.detail?'<p style="font-size:12px;color:#555;line-height:1.7;margin-bottom:12px">'+esc(d.detail)+'</p>':'')
+    +'<p style="font-size:13px;color:#444;margin-bottom:20px">ونتمنى له دوام التوفيق والنجاح</p>'
+    // footer
+    +'<div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:16px;padding-top:12px;border-top:1px solid '+gold+'44">'
+    +'<div style="text-align:right"><div style="font-size:11px;color:#666;margin-bottom:4px">التاريخ</div><div style="font-size:12px;font-weight:700;color:'+navy+'">'+esc(d.date||'_____________')+'</div>'+(d.city?'<div style="font-size:11px;color:#888">'+esc(d.city)+'</div>':'')+'</div>'
+    +'<div style="text-align:center"><div style="width:80px;height:80px;border:2px dashed '+gold+'99;border-radius:50%;display:flex;align-items:center;justify-content:center"><div style="font-size:10px;color:'+gold+';font-weight:700;line-height:1.3">الختم<br>الرسمي</div></div></div>'
+    +'<div style="text-align:left"><div style="font-size:11px;color:#666;margin-bottom:20px">التوقيع</div>'+(d.number?'<div style="font-size:10px;color:#888">رقم: '+esc(d.number)+'</div>':'')+'</div>'
+    +'</div>'
+    +'</div></div>';
+}
+function printCert(){
+  var d=getCertData();
+  if(!d.recipient||!d.org||!d.subject){toast('يرجى إكمال البيانات أولاً');return}
+  var wrap=document.getElementById('cvprint');
+  wrap.innerHTML='<div style="padding:20px;max-width:700px;margin:0 auto">'+buildCertHtml(d)+'</div>';
+  document.fonts.ready.then(function(){setTimeout(function(){window.print()},320);setTimeout(function(){wrap.innerHTML=''},4500)});
+}
+function downloadCertWord(){
+  var d=getCertData();
+  if(!d.recipient||!d.org||!d.subject){toast('يرجى إكمال البيانات أولاً');return}
+  var html='<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><style>'
+    +'body{font-family:Arial,sans-serif;direction:rtl;margin:40px;background:#fffef7}'
+    +'h1{color:#002045;text-align:center}p{text-align:center;line-height:2}'
+    +'</style></head><body>'+buildCertHtml(d)+'</body></html>';
+  dlFile('\ufeff'+html,'application/msword',(d.recipient||'شهادة')+'.doc');
+}
+
+// ══════════════════════════════════════════
+//  WORD / DOC EXPORT
+// ══════════════════════════════════════════
+function downloadWord(){
+  var p=cv.personal;
+  var html='<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="utf-8">'
+    +'<style>body{font-family:Arial,sans-serif;direction:rtl;margin:40px;font-size:12pt}'
+    +'h1{color:#002045;font-size:18pt;margin-bottom:4px}h2{color:#002045;font-size:13pt;border-right:4px solid #775a19;padding-right:8px}'
+    +'p,div{line-height:1.7}table{width:100%;border-collapse:collapse}td{padding:4px 8px;vertical-align:top}'
+    +'</style></head><body>'+buildWordBody(cv)+'</body></html>';
+  dlFile('\ufeff'+html,'application/msword',(p.fullName||'سيرة')+'.doc');
+  toast('تم إنشاء ملف Word ✓');
+}
+function buildWordBody(data){
+  var p=data.personal,photo=p.photo?'<img src="'+p.photo+'" style="width:90px;height:90px;border-radius:50%;object-fit:cover;float:left;margin-right:16px"/>':'';
+  var sudanRow='';
+  if(p.gender||p.dob||p.nationality||p.religion||p.nationalId||p.marital){
+    sudanRow='<h2>البيانات الشخصية</h2><table>'
+      +(p.gender?'<tr><td><b>الجنس</b></td><td>'+esc(p.gender)+'</td><td><b>الحالة</b></td><td>'+esc(p.marital||'')+'</td></tr>':'')
+      +(p.dob?'<tr><td><b>تاريخ الميلاد</b></td><td>'+esc(p.dob)+'</td><td><b>مكان الميلاد</b></td><td>'+esc(p.pob||'')+'</td></tr>':'')
+      +(p.nationality?'<tr><td><b>الجنسية</b></td><td>'+esc(p.nationality)+'</td><td><b>الديانة</b></td><td>'+esc(p.religion||'')+'</td></tr>':'')
+      +(p.nationalId?'<tr><td><b>الرقم الوطني</b></td><td colspan="3">'+esc(p.nationalId)+'</td></tr>':'')
+      +'</table>';
+  }
+  var expRows=data.experience.map(function(e){return'<div style="margin-bottom:10px;padding-right:10px;border-right:3px solid #775a19"><b>'+esc(e.title)+'</b> — '+esc(e.company)+'<br><span style="color:#666;font-size:11pt">'+esc(e.startDate)+' — '+esc(e.endDate)+'</span>'+(e.description?'<br>'+esc(e.description):'')+'</div>'}).join('');
+  var eduRows=data.education.map(function(e){return'<div style="margin-bottom:8px"><b>'+esc(e.degree)+'</b><br>'+esc(e.school)+(e.endYear?' | '+esc(e.endYear):'')+'</div>'}).join('');
+  var crsRows=data.courses.map(function(c){return'<div>• <b>'+esc(c.name)+'</b>'+(c.provider?' — '+esc(c.provider):'')+(c.date?' ('+esc(c.date)+')':'')+'</div>'}).join('');
+  var sklRow=data.skills.length?data.skills.map(function(s){return'<span style="background:#e2e8f0;padding:2px 8px;border-radius:4px;margin-left:4px;font-size:11pt">'+esc(s)+'</span>'}).join(''):'';
+  return'<div style="display:flex;align-items:flex-start;margin-bottom:16px">'+photo
+    +'<div><h1 style="margin:0 0 4px">'+esc(p.fullName||'')+'</h1>'
+    +'<div style="font-size:13pt;color:#775a19;font-weight:bold;margin-bottom:6px">'+esc(p.title||'')+'</div>'
+    +'<div style="font-size:11pt;color:#555">'+(p.email?esc(p.email)+'&nbsp;&nbsp;':'')+(p.phone?esc(p.phone)+'&nbsp;&nbsp;':'')+(p.address?esc(p.address):'')+'</div>'
+    +'</div></div><hr style="border-color:#002045;margin-bottom:16px"/>'
+    +sudanRow
+    +(data.summary?'<h2>الملخص المهني</h2><p>'+esc(data.summary)+'</p>':'')
+    +(expRows?'<h2>الخبرة العملية</h2>'+expRows:'')
+    +(eduRows?'<h2>التعليم والمؤهلات</h2>'+eduRows:'')
+    +(crsRows?'<h2>الدورات التدريبية</h2>'+crsRows:'')
+    +(sklRow?'<h2>المهارات</h2><div>'+sklRow+'</div>':'');
+}
+function dlFile(content,mime,filename){
+  try{
+    var blob=new Blob([content],{type:mime});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');
+    a.href=url;a.download=filename;
+    document.body.appendChild(a);a.click();
+    document.body.removeChild(a);
+    setTimeout(function(){URL.revokeObjectURL(url)},1500);
+  }catch(e){toast('خطأ في التحميل — جرّب PDF بدلاً')}
+}
+
+function esc(s){if(s===null||s===undefined)return'';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+// ══════════════════════════════════════════
+//  NOTIFICATION SYSTEM
+// ══════════════════════════════════════════
+
+// IDs for scheduled notifications
+var NID = { daily:1001, weekly:1002, draft:1003, old:1004, test:1099 };
+
+// Capacitor plugin reference (injected at runtime by Capacitor bridge)
+function getNPlugin() {
+  return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.LocalNotifications)
+    ? window.Capacitor.Plugins.LocalNotifications : null;
+}
+
+// Web Notification API fallback
+function getWebNotif() {
+  return ('Notification' in window) ? window.Notification : null;
+}
+
+// ── Init: create Android channel ───────────
+function initNotifications() {
+  var p = getNPlugin();
+  if (!p) return;
+  try {
+    p.createChannel({
+      id: 'sira-main',
+      name: 'إشعارات سيرة',
+      description: 'تذكيرات تطبيق السيرة الذاتية',
+      importance: 4,   // IMPORTANCE_HIGH
+      visibility: 1,   // PUBLIC
+      vibration: true,
+      lights: true,
+      lightColor: '#002045'
+    });
+  } catch(e) {}
+}
+
+// ── Request permission ──────────────────────
+async function requestNotifPerm() {
+  var p = getNPlugin();
+  if (p) {
+    try {
+      var r = await p.requestPermissions();
+      return r && r.display === 'granted';
+    } catch(e) { return false; }
+  }
+  var W = getWebNotif();
+  if (W) {
+    var perm = await W.requestPermission();
+    return perm === 'granted';
+  }
+  return false;
+}
+
+// ── Check permission ────────────────────────
+async function hasNotifPerm() {
+  var p = getNPlugin();
+  if (p) {
+    try { var r = await p.checkPermissions(); return r && r.display === 'granted'; }
+    catch(e) { return false; }
+  }
+  var W = getWebNotif();
+  return W ? W.permission === 'granted' : false;
+}
+
+// ── Schedule one notification ───────────────
+async function scheduleOne(opts) {
+  // opts: { id, title, body, at:Date, extra }
+  var p = getNPlugin();
+  if (p) {
+    try {
+      await p.schedule({ notifications: [{
+        id:         opts.id,
+        title:      opts.title,
+        body:       opts.body,
+        channelId:  'sira-main',
+        smallIcon:  'ic_launcher',
+        iconColor:  '#002045',
+        schedule:   { at: opts.at, allowWhileIdle: true },
+        extra:      opts.extra || null
+      }]});
+      return true;
+    } catch(e) { console.warn('Notif schedule error:', e); return false; }
+  }
+  // Web fallback — simulated via setTimeout
+  var W = getWebNotif();
+  if (W && W.permission === 'granted' && opts.at) {
+    var delay = opts.at - Date.now();
+    if (delay > 0 && delay < 86400000) { // max 24h for web
+      setTimeout(function() {
+        try { new W(opts.title, { body: opts.body, icon: '/favicon.ico' }); } catch(e) {}
+      }, delay);
+      return true;
+    }
+  }
+  return false;
+}
+
+// ── Cancel specific notification ────────────
+async function cancelNotif(id) {
+  var p = getNPlugin();
+  if (p) try { await p.cancel({ notifications: [{ id: id }] }); } catch(e) {}
+}
+
+// ── Cancel all app notifications ────────────
+async function cancelAllNotifs() {
+  var p = getNPlugin();
+  if (!p) return;
+  try {
+    var pending = await p.getPending();
+    var list = (pending && pending.notifications) ? pending.notifications : [];
+    if (list.length) await p.cancel({ notifications: list });
+  } catch(e) {}
+}
+
+// ── Schedule all based on saved settings ────
+async function scheduleAllNotifs() {
+  var s = getNotifSettings();
+  if (!s.enabled) { await cancelAllNotifs(); return; }
+
+  await cancelAllNotifs(); // reset first
+
+  var now = Date.now();
+
+  // 1. Daily reminder
+  if (s.daily) {
+    var parts = (s.dailyTime || '09:00').split(':');
+    var at = new Date();
+    at.setHours(parseInt(parts[0]||9), parseInt(parts[1]||0), 0, 0);
+    if (at.getTime() <= now) at.setDate(at.getDate() + 1); // next day if past
+    await scheduleOne({ id: NID.daily, title: 'سيرة 📄', body: 'لا تنس تحديث سيرتك الذاتية!', at: at });
+  }
+
+  // 2. Weekly reminder (next Saturday 10:00 AM)
+  if (s.weekly) {
+    var at = new Date();
+    var daysUntilSat = (6 - at.getDay() + 7) % 7 || 7;
+    at.setDate(at.getDate() + daysUntilSat);
+    at.setHours(10, 0, 0, 0);
+    await scheduleOne({ id: NID.weekly, title: 'سيرة 🌟', body: 'مرّ أسبوع — هل هناك خبرة جديدة تضيفها لسيرتك؟', at: at });
+  }
+
+  // 3. Draft reminder (if incomplete CVs exist)
+  if (s.draft) {
+    var drafts = cvList.filter(function(c) { return calcPct(c) < 100; });
+    if (drafts.length > 0) {
+      var at = new Date(now + 8 * 3600000); // 8 hours later
+      await scheduleOne({ id: NID.draft, title: 'سيرة ✍️', body: 'لديك ' + drafts.length + ' سيرة غير مكتملة — أكملها الآن!', at: at });
+    }
+  }
+
+  // 4. Old CV reminder (30 days no edit)
+  if (s.old && cvList.length > 0) {
+    var oldest = cvList.reduce(function(a, b) {
+      return new Date(a.updatedAt) < new Date(b.updatedAt) ? a : b;
+    });
+    var lastEdit = new Date(oldest.updatedAt);
+    var daysOld = (now - lastEdit.getTime()) / 86400000;
+    if (daysOld >= 30) {
+      var at = new Date(now + 3600000); // 1 hour
+      await scheduleOne({ id: NID.old, title: 'سيرة 🔔', body: 'لم تُحدّث سيرتك منذ ' + Math.floor(daysOld) + ' يوماً — حان وقت التحديث!', at: at });
+    } else {
+      // Schedule for when it turns 30 days old
+      var triggerAt = new Date(lastEdit.getTime() + 30 * 86400000);
+      if (triggerAt > new Date()) {
+        await scheduleOne({ id: NID.old, title: 'سيرة 🔔', body: 'مرّ شهر على آخر تحديث لسيرتك — حان وقت التجديد!', at: triggerAt });
+      }
+    }
+  }
+}
+
+// ── Test notification (immediate) ───────────
+async function testNotification() {
+  var hasPerm = await hasNotifPerm();
+  if (!hasPerm) {
+    var granted = await requestNotifPerm();
+    if (!granted) {
+      showNotifStatus('❌ لم يُمنح إذن الإشعارات — افتح إعدادات التطبيق وفعّل الإشعارات', '#ba1a1a');
+      return;
+    }
+  }
+  var at = new Date(Date.now() + 3000); // 3 seconds
+  var ok = await scheduleOne({ id: NID.test, title: 'سيرة ✅', body: 'الإشعارات تعمل بشكل صحيح!', at: at });
+  if (ok) {
+    showNotifStatus('✅ سيصلك إشعار تجريبي خلال 3 ثوانٍ', '#16a34a');
+    toast('سيصلك إشعار بعد 3 ثوانٍ');
+  } else {
+    showNotifStatus('⚠️ الإشعارات متاحة فقط عند التشغيل كتطبيق Android', '#775a19');
+  }
+}
+
+function showNotifStatus(msg, color) {
+  var el = document.getElementById('notif-status');
+  if (!el) return;
+  el.textContent = msg;
+  el.style.color = color || 'var(--onv)';
+  el.style.display = 'block';
+  setTimeout(function() { el.style.display = 'none'; }, 5000);
+}
+
+// ── Settings persistence ────────────────────
+function getNotifSettings() {
+  try { return JSON.parse(localStorage.getItem('sira_notif') || '{}'); }
+  catch(e) { return {}; }
+}
+function saveNotifSettings() {
+  var s = {
+    enabled: (document.getElementById('n-master')||{}).checked || false,
+    daily:   (document.getElementById('n-daily') ||{}).checked || false,
+    dailyTime: (document.getElementById('n-daily-time')||{}).value || '09:00',
+    weekly:  (document.getElementById('n-weekly')||{}).checked || false,
+    draft:   (document.getElementById('n-draft') ||{}).checked || false,
+    old:     (document.getElementById('n-old')   ||{}).checked || false
+  };
+  localStorage.setItem('sira_notif', JSON.stringify(s));
+  scheduleAllNotifs();
+}
+function loadNotifUI() {
+  var s = getNotifSettings();
+  function sc(id, val) { var e = document.getElementById(id); if(e) e.checked = !!val; }
+  function sv(id, val) { var e = document.getElementById(id); if(e) e.value  = val || '09:00'; }
+  sc('n-master', s.enabled); sc('n-daily',  s.daily);
+  sc('n-weekly', s.weekly);  sc('n-draft',  s.draft); sc('n-old', s.old);
+  sv('n-daily-time', s.dailyTime);
+  var opts = document.getElementById('notif-opts');
+  var timeEl = document.getElementById('n-daily-time');
+  if (opts) opts.style.display = s.enabled ? 'block' : 'none';
+  if (timeEl) timeEl.style.display = s.daily ? 'inline-block' : 'none';
+}
+
+// ── Toggle handlers ─────────────────────────
+async function onMasterToggle(cb) {
+  var opts = document.getElementById('notif-opts');
+  if (opts) opts.style.display = cb.checked ? 'block' : 'none';
+  if (cb.checked) {
+    var granted = await requestNotifPerm();
+    if (!granted) {
+      cb.checked = false;
+      if (opts) opts.style.display = 'none';
+      showNotifStatus('❌ يرجى السماح بالإشعارات من إعدادات الهاتف', '#ba1a1a');
+      return;
+    }
+    initNotifications();
+    showNotifStatus('✅ تم تفعيل الإشعارات', '#16a34a');
+  }
+  saveNotifSettings();
+}
+function onDailyToggle(cb) {
+  var timeEl = document.getElementById('n-daily-time');
+  if (timeEl) timeEl.style.display = cb.checked ? 'inline-block' : 'none';
+  saveNotifSettings();
+}
+
+// ── Auto-schedule when CV saved ─────────────
+function onCVSaved() {
+  var s = getNotifSettings();
+  if (s.enabled) setTimeout(scheduleAllNotifs, 500);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  initApp();
+  initNotifications();
+  // Re-schedule notifications on app open
+  var s = getNotifSettings();
+  if (s.enabled) scheduleAllNotifs();
+});
+</script>
+</body>
+</html>
